@@ -13,9 +13,41 @@
 
 html { scroll-behavior: auto; } /* Lenis handles smooth scroll */
 
+/* ── Skip to main content (visible only on keyboard focus) ── */
+.skip-link {
+  position: fixed;
+  top: -100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #F7F7F7;
+  color: #0D0D0D;
+  padding: 12px 28px;
+  border-radius: 0 0 10px 10px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  z-index: 99999;
+  text-decoration: none;
+  transition: top 0.2s ease;
+}
+.skip-link:focus-visible {
+  top: 0;
+  outline: 2px solid #F2818E;
+  outline-offset: 3px;
+}
+
+/* ── Focus styles (keyboard only, never on mouse click) ─── */
+:focus { outline: none; }
+:focus-visible {
+  outline: 2px solid #F2818E;
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
 /* ── Custom cursor ──────────────────────────────── */
-body { cursor: none; }
-a, button { cursor: none; }
+/* cursor: none only applied when JS loads successfully */
+.cursor-ready,
+.cursor-ready a,
+.cursor-ready button { cursor: none; }
 
 .custom-cursor {
   position: fixed;

@@ -13,10 +13,13 @@ if (typeof Lenis !== 'undefined') {
 }
 
 
-// ── 2. Custom cursor circle (lerp) ───────────────
+// ── 2. Custom cursor circle ───────────────────────
 (function initCursor() {
   const circle = document.querySelector('.custom-cursor');
   if (!circle) return;
+
+  // Only hide the native cursor once JS is confirmed running
+  document.body.classList.add('cursor-ready');
 
   document.addEventListener('mousemove', (e) => {
     circle.style.left = e.clientX + 'px';
