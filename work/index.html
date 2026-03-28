@@ -4,6 +4,18 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Selected Work — Joana Filipe</title>
+  <meta name="description" content="Selected Work — Joana Filipe. Case studies across institutional web platforms, B2B mobile apps, and startup products." />
+  <meta property="og:title" content="Selected Work — Joana Filipe" />
+  <meta property="og:description" content="Case studies across institutional web platforms, B2B mobile apps, and startup products." />
+  <meta property="og:image" content="https://joanalfdesign-uxui.github.io/portfolio/assets/og-cover.png" />
+  <meta property="og:url" content="https://joanalfdesign-uxui.github.io/portfolio/work/" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Selected Work — Joana Filipe" />
+  <meta name="twitter:description" content="Case studies across institutional web platforms, B2B mobile apps, and startup products." />
+  <link rel="icon" type="image/png" sizes="16x16" href="../assets/FAVICON16.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/FAVICON32.png" />
+  <link rel="apple-touch-icon" sizes="64x64" href="../assets/FAVICON64.png" />
   <link rel="stylesheet" href="../css/style.css" />
   <link rel="stylesheet" href="../css/work.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -184,15 +196,10 @@
     const cursor = document.querySelector('.project-cursor');
     const cards = document.querySelectorAll('a.work-card');
 
-    let pMouseX = 0, pMouseY = 0, pCx = 0, pCy = 0;
-    document.addEventListener('mousemove', (e) => { pMouseX = e.clientX; pMouseY = e.clientY; });
-    (function pLoop() {
-      pCx += (pMouseX - pCx) * 0.10;
-      pCy += (pMouseY - pCy) * 0.10;
-      cursor.style.left = pCx + 'px';
-      cursor.style.top  = pCy + 'px';
-      requestAnimationFrame(pLoop);
-    })();
+    document.addEventListener('mousemove', (e) => {
+      cursor.style.left = e.clientX + 'px';
+      cursor.style.top  = e.clientY + 'px';
+    });
 
     cards.forEach(card => {
       card.addEventListener('mouseenter', () => cursor.classList.add('visible'));

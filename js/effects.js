@@ -18,23 +18,10 @@ if (typeof Lenis !== 'undefined') {
   const circle = document.querySelector('.custom-cursor');
   if (!circle) return;
 
-  let mouseX = 0, mouseY = 0;
-  let cx = 0, cy = 0;
-
-  // Track real mouse position
   document.addEventListener('mousemove', (e) => {
-    mouseX = e.clientX;
-    mouseY = e.clientY;
+    circle.style.left = e.clientX + 'px';
+    circle.style.top  = e.clientY + 'px';
   });
-
-  // Animate with smooth lerp (lag effect)
-  (function loop() {
-    cx += (mouseX - cx) * 0.12;
-    cy += (mouseY - cy) * 0.12;
-    circle.style.left = cx + 'px';
-    circle.style.top  = cy + 'px';
-    requestAnimationFrame(loop);
-  })();
 
   // Hide when mouse leaves window
   document.addEventListener('mouseleave', () => circle.classList.add('is-hidden'));
