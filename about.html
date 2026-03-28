@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About me — Joana Filipe</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/about.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Boogaloo&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Boldonse&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <div class="page-overlay" aria-hidden="true"></div>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="custom-cursor" aria-hidden="true"></div>
+
+  <!-- ===== HEADER / NAV ===== -->
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <ul class="nav__list">
+        <li><a href="index.html" class="nav__link">Home</a></li>
+        <li><a href="work/" class="nav__link">Selected Work</a></li>
+        <li><a href="about.html" class="nav__link nav__link--active">About me</a></li>
+      </ul>
+      <div class="nav__progress-bar" id="navProgress"></div>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ===== HERO ===== -->
+    <section class="about-hero">
+      <div class="about-hero__bg">
+      <div class="about-hero__inner">
+
+        <!-- Left: text + CTA -->
+        <div class="about-hero__text">
+          <h1 class="about-hero__heading">Hey dear user, I'm Joana</h1>
+          <div class="about-hero__body">
+            <p>Let me introduce myself, I'm from the city that doesn't exist (Leiria), or so they say.</p>
+            <p>I have the curiosity and passion of a child, mixed with the logical thinking of a chess player. My favourite part of being a Product Designer? Turning spider webs into simple flows.</p>
+            <p>I'd say I'm extroverted, but I think about a thousand things at once, sometimes even I struggle to keep up. I keep reminding myself to take it easy.</p>
+            <p>If you're looking for a designer who talks to users before touching Figma, connects dots nobody noticed, and somehow still ships on time, hi, that's me. Fair warning: I will ask why. A lot.</p>
+          </div>
+          <a href="#" class="about-hero__cta" download>
+            DOWNLOAD CV
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M12 5v14M5 12l7 7 7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+        </div>
+
+        <!-- Right: circular illustration -->
+        <div class="about-hero__visual">
+          <img
+            src="assets/IMAGEM_ABOUTME.png"
+            alt="Joana Filipe"
+            class="about-hero__illustration"
+          />
+        </div>
+
+      </div><!-- end about-hero__inner -->
+      </div><!-- end about-hero__bg -->
+    </section>
+
+    <!-- ===== MORE THAN A PORTFOLIO ===== -->
+    <section class="about-cards">
+      <div class="about-cards__bg">
+        <h2 class="about-cards__heading" data-reveal>More than a portfolio</h2>
+
+        <div class="about-cards__grid">
+
+          <!-- Card 1: Always in the room -->
+          <div class="about-card about-card--pink" data-reveal data-delay="1">
+            <div class="about-card__image-wrap">
+              <img src="assets/project-upfeup.png" alt="" class="about-card__image" />
+            </div>
+            <div class="about-card__content">
+              <h3 class="about-card__title">Always in the room</h3>
+              <div class="about-card__desc-wrap"><p class="about-card__desc">I co-organize Friends of Figma Portugal and manage the community at As Raparigas do Código. Design doesn't happen in isolation, and neither do I.</p></div>
+            </div>
+          </div>
+
+          <!-- Card 2: I show up even when it's hard -->
+          <div class="about-card about-card--yellow" data-reveal data-delay="2">
+            <div class="about-card__image-wrap">
+              <img src="assets/IMAGE_BRAINR1.png" alt="" class="about-card__image" />
+            </div>
+            <div class="about-card__content">
+              <h3 class="about-card__title">I show up even when it's hard</h3>
+              <div class="about-card__desc-wrap"><p class="about-card__desc">After 6pm you might find me at a crossfit box, spaghetti arms and all. I've learned that consistency beats talent, in the gym and in design.</p></div>
+            </div>
+          </div>
+
+          <!-- Card 3: The missing piece -->
+          <div class="about-card about-card--blue" data-reveal data-delay="3">
+            <div class="about-card__image-wrap">
+              <img src="assets/project-iokee.png" alt="" class="about-card__image" />
+            </div>
+            <div class="about-card__content">
+              <h3 class="about-card__title">The missing piece</h3>
+              <div class="about-card__desc-wrap"><p class="about-card__desc">I bring research, craft, and a bit of chaos to every team. I ask the uncomfortable questions, connect the dots nobody noticed, and somehow still meet the deadline.</p></div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer" aria-label="Footer">
+    <div class="site-footer__bg">
+
+      <div class="site-footer__cols">
+
+        <!-- Left column -->
+        <div class="site-footer__col site-footer__col--left">
+          <div class="site-footer__cta">
+            <h2 class="site-footer__heading">Got a complex problem to solve?</h2>
+            <p class="site-footer__subheading">That's exactly where I work best.</p>
+          </div>
+          <div class="site-footer__contact">
+            <p class="site-footer__contact-item">Portugal</p>
+            <a href="mailto:joanalf.design@gmail.com" class="site-footer__contact-item site-footer__email">joanalf.design@gmail.com</a>
+            <a href="https://www.linkedin.com/in/joanalf-uxuidesign/" target="_blank" rel="noopener noreferrer" class="site-footer__social" aria-label="LinkedIn">
+              <img src="assets/LINKEDIN_ICON.png" alt="LinkedIn" width="24" height="24" />
+            </a>
+          </div>
+        </div>
+
+        <!-- Center column: nav links -->
+        <div class="site-footer__col site-footer__col--center">
+          <nav aria-label="Footer navigation">
+            <ul class="site-footer__nav-list">
+              <li class="site-footer__nav-item">
+                <a href="index.html" class="site-footer__nav-link">
+                  <div class="footer-link-overlay" aria-hidden="true"></div>
+                  <span class="footer-link-text">HOME</span>
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17L17 7M17 7H8M17 7v9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </a>
+              </li>
+              <li class="site-footer__nav-item">
+                <a href="work/" class="site-footer__nav-link">
+                  <div class="footer-link-overlay" aria-hidden="true"></div>
+                  <span class="footer-link-text">SELECTED WORK</span>
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17L17 7M17 7H8M17 7v9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </a>
+              </li>
+              <li class="site-footer__nav-item">
+                <a href="about.html" class="site-footer__nav-link">
+                  <div class="footer-link-overlay" aria-hidden="true"></div>
+                  <span class="footer-link-text">ABOUT ME</span>
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17L17 7M17 7H8M17 7v9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </a>
+              </li>
+              <li class="site-footer__nav-item">
+                <a href="#" class="site-footer__nav-link">
+                  <div class="footer-link-overlay" aria-hidden="true"></div>
+                  <span class="footer-link-text">DOWNLOAD CV</span>
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 5v14M5 12l7 7 7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <!-- Right column -->
+        <div class="site-footer__col site-footer__col--right">
+          <a href="about.html" class="site-footer__profile">
+            <img src="assets/JOANA_IMAGE.png" alt="Joana Filipe" class="site-footer__avatar" />
+            <span class="site-footer__profile-name">Joana Filipe</span>
+          </a>
+          <p class="site-footer__credit">Designed in Figma · Built with Claude</p>
+        </div>
+
+      </div>
+
+      <!-- Full-width name banner -->
+      <div class="site-footer__name-banner">
+        <img src="assets/JOANAFILIPE_NAME.png" alt="Joana Filipe" class="site-footer__name-banner-img" />
+      </div>
+
+    </div>
+  </footer>
+
+  <script>
+    // Scroll reveal
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 });
+    document.querySelectorAll('[data-reveal]').forEach(el => observer.observe(el));
+
+    // Scroll progress bar
+    const progressBar = document.getElementById('navProgress');
+    window.addEventListener('scroll', () => {
+      const scrollTop = window.scrollY;
+      const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+      const progress = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+      progressBar.style.width = progress + '%';
+    });
+
+    // Footer hover
+    document.querySelectorAll('.site-footer__nav-link').forEach(link => {
+      const overlay = link.querySelector('.footer-link-overlay');
+      const text = link.querySelector('.footer-link-text');
+      const svg = link.querySelector('svg');
+      link.addEventListener('mouseenter', () => {
+        overlay.style.opacity = '1';
+        if (text) text.style.color = '#000000';
+        if (svg) svg.style.color = '#000000';
+      });
+      link.addEventListener('mouseleave', () => {
+        overlay.style.opacity = '0';
+        if (text) text.style.color = '';
+        if (svg) svg.style.color = '';
+      });
+    });
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.14/dist/lenis.min.js"></script>
+  <script src="js/effects.js"></script>
+</body>
+</html>

@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Joana Filipe — Product Designer</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Boogaloo&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Boldonse&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <div class="page-overlay" aria-hidden="true"></div>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="custom-cursor" aria-hidden="true"></div>
+
+  <!-- ===== HEADER / NAV ===== -->
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <ul class="nav__list">
+        <li><a href="#" class="nav__link nav__link--active">Home</a></li>
+        <li><a href="work/" class="nav__link">Selected Work</a></li>
+        <li><a href="about.html" class="nav__link">About me</a></li>
+      </ul>
+      <div class="nav__progress-bar" id="navProgress"></div>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ===== HERO ===== -->
+    <section class="hero" aria-label="Introduction">
+      <div class="hero__bg">
+        <div class="hero__inner">
+
+          <div class="hero__title-group">
+            <!-- "Hi! I'm Joana, a" -->
+            <p class="hero__hi">Hi! I'm Joana, a</p>
+
+            <!-- PRODUCT DESIGNER visual (portrait already included in image) -->
+            <div class="hero__visual">
+              <img
+                src="assets/PRODUCTDESIGNER_HEADER.png"
+                alt="Product Designer"
+                class="hero__pd-img"
+              />
+            </div>
+
+            <!-- Subtitle H1 -->
+            <h1 class="hero__subtitle">
+              who turns pain points<br />into the whole point.
+            </h1>
+          </div>
+
+          <!-- Description -->
+          <p class="hero__description">
+            From agency work to in-house product.<br />
+            3+ years designing across financial software, industrial platforms, and institutional products, always from research to shipped.
+          </p>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== BRANDS TICKER ===== -->
+    <div class="brands" aria-label="Brands I've worked with" data-reveal>
+      <div class="brands__track">
+        <div class="brands__list">
+          <img src="assets/FEUP_LOGO.png"          alt="FEUP"             class="brand-logo" />
+          <img src="assets/COLEP_LOGO.png"          alt="Colep"            class="brand-logo" />
+          <img src="assets/CONTALA_LOGO.png"        alt="Contala"          class="brand-logo" />
+          <img src="assets/PAGINASAMARELAS_LOGO.png" alt="Páginas Amarelas"  class="brand-logo" />
+          <img src="assets/PORTUGALSOUEU_LOGO.png"  alt="Portugal Sou Eu"  class="brand-logo" />
+          <img src="assets/REN_LOGO.png"            alt="REN"              class="brand-logo" />
+          <img src="assets/UA_LOGO.png"             alt="UA"               class="brand-logo" />
+          <!-- duplicate for seamless loop -->
+          <img src="assets/FEUP_LOGO.png"          alt=""                 class="brand-logo" aria-hidden="true" />
+          <img src="assets/COLEP_LOGO.png"          alt=""                 class="brand-logo" aria-hidden="true" />
+          <img src="assets/CONTALA_LOGO.png"        alt=""                 class="brand-logo" aria-hidden="true" />
+          <img src="assets/PAGINASAMARELAS_LOGO.png" alt=""                class="brand-logo" aria-hidden="true" />
+          <img src="assets/PORTUGALSOUEU_LOGO.png"  alt=""                 class="brand-logo" aria-hidden="true" />
+          <img src="assets/REN_LOGO.png"            alt=""                 class="brand-logo" aria-hidden="true" />
+          <img src="assets/UA_LOGO.png"             alt=""                 class="brand-logo" aria-hidden="true" />
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== PROJECTS ===== -->
+    <section class="projects" aria-label="Selected work">
+      <div class="projects__inner">
+
+        <!-- UP FEUP -->
+        <a href="work/" class="project-card project-card--upfeup" aria-label="UP FEUP — See how it was done">
+          <div class="project-card__image-wrap">
+            <img src="assets/project-upfeup.png" alt="UP FEUP project screenshot" class="project-card__image" />
+          </div>
+          <div class="project-card__body">
+            <div class="project-card__meta">
+              <div class="project-card__tags">
+                <span class="tag tag--upfeup">Institutional</span>
+                <span class="tag tag--upfeup">Web</span>
+              </div>
+              <div class="project-card__info">
+                <h2 class="project-card__title">UP FEUP</h2>
+                <p class="project-card__desc">A web platform to automate student applications for standalone course units at FEUP, replacing a manual process with a clear, trackable experience from submission to results.</p>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <!-- MyAJ Partner -->
+        <a href="work/" class="project-card project-card--myaj" aria-label="MyAJ Partner — See how it was done">
+          <div class="project-card__image-wrap">
+            <img src="assets/project-myaj.png" alt="MyAJ Partner project screenshot" class="project-card__image" />
+          </div>
+          <div class="project-card__body">
+            <div class="project-card__meta">
+              <div class="project-card__tags">
+                <span class="tag tag--myaj">B2B</span>
+                <span class="tag tag--myaj">Mobile</span>
+              </div>
+              <div class="project-card__info">
+                <h2 class="project-card__title">MyAJ Partner</h2>
+                <p class="project-card__desc">Redesigned the employee-facing loyalty app for a national automotive network, eliminating 100% of transaction errors through better UX and clearer feedback.</p>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <!-- Iokee -->
+        <a href="work/" class="project-card project-card--iokee" aria-label="Iokee — See how it was done">
+          <div class="project-card__image-wrap">
+            <img src="assets/project-iokee.png" alt="Iokee project screenshot" class="project-card__image" />
+          </div>
+          <div class="project-card__body">
+            <div class="project-card__meta">
+              <div class="project-card__tags">
+                <span class="tag tag--iokee">Startup</span>
+                <span class="tag tag--iokee">Mobile</span>
+              </div>
+              <div class="project-card__info">
+                <h2 class="project-card__title">Iokee</h2>
+                <p class="project-card__desc">An energy monitoring app for Portuguese households, designed to close the gap between smart hardware and the people who don't know how to use it.</p>
+              </div>
+            </div>
+          </div>
+        </a>
+
+      </div>
+    </section>
+
+    <!-- Custom cursor for project cards -->
+    <div class="project-cursor" aria-hidden="true">
+      <span>See how it was done</span>
+    </div>
+
+    <!-- ===== SKILLS ===== -->
+    <section class="skills" aria-label="Skills">
+      <h2 class="skills__heading">What I bring</h2>
+      <div class="skills__grid">
+
+        <!-- AI & vibe coding (top-left: x=0, y=0) -->
+        <div class="skills__item" data-reveal data-delay="1">
+          <img src="assets/AIVIBECODING_IMAGE.svg" alt="" class="skills__icon" aria-hidden="true" />
+          <div class="skills__text">
+            <h3 class="skills__title">AI &amp; vibe coding</h3>
+            <p class="skills__desc">Claude, prompt engineering and vibe coding for rapid prototyping and design workflow automation</p>
+          </div>
+        </div>
+
+        <!-- UX Research (top-center: x=479, y=0) -->
+        <div class="skills__item" data-reveal data-delay="2">
+          <img src="assets/UXRESEARCH_IMAGE.svg" alt="" class="skills__icon" aria-hidden="true" />
+          <div class="skills__text">
+            <h3 class="skills__title">UX Research</h3>
+            <p class="skills__desc">User interviews, field observation, focus groups, surveys and usability testing, from problem discovery to validated decisions</p>
+          </div>
+        </div>
+
+        <!-- Usability testing (top-right: x=958, y=0) -->
+        <div class="skills__item" data-reveal data-delay="3">
+          <img src="assets/USABILITYTESTING_IMAGE.svg" alt="" class="skills__icon" aria-hidden="true" />
+          <div class="skills__text">
+            <h3 class="skills__title">Usability testing</h3>
+            <p class="skills__desc">Moderated and unmoderated tests, RITE method and beta feedback cycles to validate design decisions with real users</p>
+          </div>
+        </div>
+
+        <!-- Product design (bottom-left: x=0, y=302) -->
+        <div class="skills__item" data-reveal data-delay="1">
+          <img src="assets/PRODUCTDESIGN_IMAGE.svg" alt="" class="skills__icon" aria-hidden="true" />
+          <div class="skills__text">
+            <h3 class="skills__title">Product design</h3>
+            <p class="skills__desc">Wireframes, prototyping and handoff, designing complex flows for B2B interfaces across web and mobile</p>
+          </div>
+        </div>
+
+        <!-- Design systems (bottom-center: x=479, y=302) -->
+        <div class="skills__item" data-reveal data-delay="2">
+          <img src="assets/DESIGNSYSTEM_IMAGE.svg" alt="" class="skills__icon" aria-hidden="true" />
+          <div class="skills__text">
+            <h3 class="skills__title">Design systems</h3>
+            <p class="skills__desc">Building scalable component libraries, documentation and design tokens, keeping design and development aligned</p>
+          </div>
+        </div>
+
+        <!-- Collaboration & facilitation (bottom-right: x=958, y=302) -->
+        <div class="skills__item" data-reveal data-delay="3">
+          <img src="assets/COLLAB_IMAGE.svg" alt="" class="skills__icon" aria-hidden="true" />
+          <div class="skills__text">
+            <h3 class="skills__title">Collaboration &amp; facilitation</h3>
+            <p class="skills__desc">Working closely with developers, PMs and stakeholders to align on decisions, communicate design rationale and keep work moving forward</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===== WORK EXPERIENCE ===== -->
+    <section class="experience" aria-label="Work experience" id="about">
+      <div class="experience__top">
+        <h2 class="experience__heading" data-reveal>Where I've worked</h2>
+        <div class="experience__list">
+
+          <div class="exp-card exp-card--brainr" data-reveal data-delay="1">
+            <div class="exp-card__inner">
+              <div class="exp-card__left">
+                <span class="exp-card__date">Oct 2025 – Present</span>
+                <img src="assets/Group - 1/BRAINR_LOGO.png" alt="BRAINR" class="exp-card__logo" />
+              </div>
+              <div class="exp-card__right">
+                <h3 class="exp-card__role">Product Designer</h3>
+                <p class="exp-card__desc">Designing and evolving a MES platform for industrial environments, focused on usability, consistency, and complex B2B workflows.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="exp-card exp-card--newnormal" data-reveal data-delay="2">
+            <div class="exp-card__inner">
+              <div class="exp-card__left">
+                <span class="exp-card__date">Sep 2023 — Oct 2025</span>
+                <img src="assets/Group - 1/NEWNORMAL_LOGO.png" alt="New Normal" class="exp-card__logo" />
+              </div>
+              <div class="exp-card__right">
+                <h3 class="exp-card__role">UX/UI Designer</h3>
+                <p class="exp-card__desc">User research, prototyping, and product design for clients across financial software, energy, education, and public sector, from wireframes to shipped.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="exp-card exp-card--ableit" data-reveal data-delay="3">
+            <div class="exp-card__inner">
+              <div class="exp-card__left">
+                <span class="exp-card__date">Sep 2023 — Oct 2024</span>
+                <img src="assets/Group - 1/ABLEIT_LOGO.png" alt="Able IT" class="exp-card__logo" />
+              </div>
+              <div class="exp-card__right">
+                <h3 class="exp-card__role">UX Consultant</h3>
+                <p class="exp-card__desc">Requirements gathering, stakeholder interviews and product design for web and mobile apps in OutSystems, clients include FEUP, UA, ULisboa, C.M. Oeiras.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="exp-card exp-card--innovaj" data-reveal data-delay="4">
+            <div class="exp-card__inner">
+              <div class="exp-card__left">
+                <span class="exp-card__date">Jun 2022 — Sep 2023</span>
+                <img src="assets/Group - 1/INNOVAJ_LOGO.png" alt="Innovaj" class="exp-card__logo" />
+              </div>
+              <div class="exp-card__right">
+                <h3 class="exp-card__role">Junior UX/UI Designer</h3>
+                <p class="exp-card__desc">Worked on two mobile products, conducting field research and iterating on flows to reduce friction and improve adoption.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Testimonials -->
+      <div class="testimonials">
+        <h2 class="testimonials__heading" data-reveal>People I've worked with</h2>
+        <div class="testimonials__list">
+
+          <blockquote class="testimonial" data-reveal data-delay="1">
+            <span class="testimonial__quote" aria-hidden="true">&ldquo;</span>
+            <p class="testimonial__text">Since the beginning of her career with us she has shown high performance and incredible learning ability, with creativity in presenting practical and quick solutions to the problems presented to her.</p>
+            <footer class="testimonial__footer">
+              <cite class="testimonial__author">Jeferson Macedo, Development Manager · AJTEC / Innovaj</cite>
+            </footer>
+          </blockquote>
+
+          <blockquote class="testimonial" data-reveal data-delay="2">
+            <span class="testimonial__quote" aria-hidden="true">&ldquo;</span>
+            <p class="testimonial__text">Joana is a wonderful person to work with. She has a great critical sense, very open to listen and accept advices, to discuss about the best options to get to the solution, always open to help the colleagues. She has a very curious spirit which leads her to want to know more about how things work. Great with deadlines and very hard-working overall. Bonus points for the good vibes.</p>
+            <footer class="testimonial__footer">
+              <cite class="testimonial__author">Beatriz Albano · AJTEC / Innovaj</cite>
+            </footer>
+          </blockquote>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer" aria-label="Footer">
+    <div class="site-footer__bg">
+
+      <!-- 3-column top section (dividers live here) -->
+      <div class="site-footer__cols">
+
+      <!-- Left column: CTA + contact -->
+      <div class="site-footer__col site-footer__col--left">
+        <div class="site-footer__cta">
+          <h2 class="site-footer__heading">Got a complex problem to solve?</h2>
+          <p class="site-footer__subheading">That's exactly where I work best.</p>
+        </div>
+        <div class="site-footer__contact">
+          <p class="site-footer__contact-item">Portugal</p>
+          <a href="mailto:joanalf.design@gmail.com" class="site-footer__contact-item site-footer__email">joanalf.design@gmail.com</a>
+          <a href="https://www.linkedin.com/in/joanalf-uxuidesign/" target="_blank" rel="noopener noreferrer" class="site-footer__social" aria-label="LinkedIn">
+            <img src="assets/LINKEDIN_ICON.png" alt="LinkedIn" width="24" height="24" />
+          </a>
+        </div>
+      </div>
+
+      <!-- Center column: nav links -->
+      <div class="site-footer__col site-footer__col--center">
+        <nav aria-label="Footer navigation">
+          <ul class="site-footer__nav-list">
+            <li class="site-footer__nav-item">
+              <a href="#" class="site-footer__nav-link">
+                <div class="footer-link-overlay" aria-hidden="true"></div>
+                <span class="footer-link-text">HOME</span>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17L17 7M17 7H8M17 7v9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </a>
+            </li>
+            <li class="site-footer__nav-item">
+              <a href="work/" class="site-footer__nav-link">
+                <div class="footer-link-overlay" aria-hidden="true"></div>
+                <span class="footer-link-text">SELECTED WORK</span>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17L17 7M17 7H8M17 7v9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </a>
+            </li>
+            <li class="site-footer__nav-item">
+              <a href="about.html" class="site-footer__nav-link">
+                <div class="footer-link-overlay" aria-hidden="true"></div>
+                <span class="footer-link-text">ABOUT ME</span>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17L17 7M17 7H8M17 7v9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </a>
+            </li>
+            <li class="site-footer__nav-item">
+              <a href="#" class="site-footer__nav-link">
+                <div class="footer-link-overlay" aria-hidden="true"></div>
+                <span class="footer-link-text">DOWNLOAD CV</span>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 5v14M5 12l7 7 7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <!-- Right column: profile + credit -->
+      <div class="site-footer__col site-footer__col--right">
+        <a href="#" class="site-footer__profile">
+          <img src="assets/JOANA_IMAGE.png" alt="Joana Filipe" class="site-footer__avatar" />
+          <span class="site-footer__profile-name">Joana Filipe</span>
+        </a>
+        <p class="site-footer__credit">Designed in Figma · Built with Claude</p>
+      </div>
+
+      </div><!-- end .site-footer__cols -->
+
+      <!-- Full-width name banner -->
+      <div class="site-footer__name-banner">
+        <img src="assets/JOANAFILIPE_NAME.png" alt="Joana Filipe" class="site-footer__name-banner-img" />
+      </div>
+
+    </div>
+  </footer>
+
+  <script>
+    // Custom cursor for project cards
+    const cursor = document.querySelector('.project-cursor');
+    const cards = document.querySelectorAll('a.project-card');
+
+    document.addEventListener('mousemove', (e) => {
+      cursor.style.left = e.clientX + 'px';
+      cursor.style.top = e.clientY + 'px';
+    });
+
+    cards.forEach(card => {
+      card.addEventListener('mouseenter', () => cursor.classList.add('visible'));
+      card.addEventListener('mouseleave', () => cursor.classList.remove('visible'));
+    });
+
+    // Scroll reveal
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 });
+
+    document.querySelectorAll('[data-reveal]').forEach(el => observer.observe(el));
+
+    // Scroll progress bar
+    const progressBar = document.getElementById('navProgress');
+    window.addEventListener('scroll', () => {
+      const scrollTop = window.scrollY;
+      const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+      const progress = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+      progressBar.style.width = progress + '%';
+    });
+
+    // BRAINR hover images — appended to body to escape stacking context
+    const brainrImg1 = document.createElement('img');
+    brainrImg1.src = 'assets/IMAGE_BRAINR1.png';
+    brainrImg1.className = 'exp-card__hover-img exp-card__hover-img--1';
+    brainrImg1.setAttribute('aria-hidden', 'true');
+
+    const brainrImg2 = document.createElement('img');
+    brainrImg2.src = 'assets/IMAGE_BRAINR2.png';
+    brainrImg2.className = 'exp-card__hover-img exp-card__hover-img--2';
+    brainrImg2.setAttribute('aria-hidden', 'true');
+
+    document.body.appendChild(brainrImg1);
+    document.body.appendChild(brainrImg2);
+
+    const brainrCard = document.querySelector('.exp-card--brainr');
+
+    brainrCard.addEventListener('mouseenter', () => {
+      const rect = brainrCard.querySelector('.exp-card__inner').getBoundingClientRect();
+      const cx = rect.left + rect.width * 0.5;
+      const cy = rect.top + rect.height * 0.5;
+      brainrImg1.style.left = (cx - 240) + 'px';
+      brainrImg1.style.top  = (cy - 80) + 'px';
+      brainrImg2.style.left = (cx + 20) + 'px';
+      brainrImg2.style.top  = (cy - 60) + 'px';
+      brainrImg1.style.opacity = '1';
+      brainrImg1.style.transform = 'rotate(-7deg) scale(1)';
+      brainrImg2.style.opacity = '1';
+      brainrImg2.style.transform = 'rotate(5deg) scale(1)';
+    });
+
+    brainrCard.addEventListener('mouseleave', () => {
+      brainrImg1.style.opacity = '0';
+      brainrImg1.style.transform = 'rotate(-7deg) scale(0.85)';
+      brainrImg2.style.opacity = '0';
+      brainrImg2.style.transform = 'rotate(5deg) scale(0.85)';
+    });
+
+    // NEW NORMAL hover images
+    const nnImg1 = document.createElement('img');
+    nnImg1.src = 'assets/IMAGE_NEWNORMAL1.png';
+    nnImg1.className = 'exp-card__hover-img exp-card__hover-img--1';
+    nnImg1.setAttribute('aria-hidden', 'true');
+
+    const nnImg2 = document.createElement('img');
+    nnImg2.src = 'assets/IMAGE_NEWNORMAL2.png';
+    nnImg2.className = 'exp-card__hover-img exp-card__hover-img--2';
+    nnImg2.setAttribute('aria-hidden', 'true');
+
+    document.body.appendChild(nnImg1);
+    document.body.appendChild(nnImg2);
+
+    const nnCard = document.querySelector('.exp-card--newnormal');
+
+    nnCard.addEventListener('mouseenter', () => {
+      const rect = nnCard.querySelector('.exp-card__inner').getBoundingClientRect();
+      const cx = rect.left + rect.width * 0.5;
+      const cy = rect.top + rect.height * 0.5;
+      nnImg1.style.left = (cx - 240) + 'px';
+      nnImg1.style.top  = (cy - 80) + 'px';
+      nnImg2.style.left = (cx + 20) + 'px';
+      nnImg2.style.top  = (cy - 60) + 'px';
+      nnImg1.style.opacity = '1';
+      nnImg1.style.transform = 'rotate(-6deg) scale(1)';
+      nnImg2.style.opacity = '1';
+      nnImg2.style.transform = 'rotate(4deg) scale(1)';
+    });
+
+    nnCard.addEventListener('mouseleave', () => {
+      nnImg1.style.opacity = '0';
+      nnImg1.style.transform = 'rotate(-6deg) scale(0.85)';
+      nnImg2.style.opacity = '0';
+      nnImg2.style.transform = 'rotate(4deg) scale(0.85)';
+    });
+
+    // ABLE IT hover image
+    const ableitImg = document.createElement('img');
+    ableitImg.src = 'assets/IMAGE_ABLEIT1.png';
+    ableitImg.className = 'exp-card__hover-img exp-card__hover-img--1';
+    ableitImg.style.width = '180px';
+    ableitImg.setAttribute('aria-hidden', 'true');
+    document.body.appendChild(ableitImg);
+
+    const ableitCard = document.querySelector('.exp-card--ableit');
+
+    ableitCard.addEventListener('mouseenter', () => {
+      const rect = ableitCard.querySelector('.exp-card__inner').getBoundingClientRect();
+      const cx = rect.left + rect.width * 0.5;
+      const cy = rect.top + rect.height * 0.5;
+      ableitImg.style.left = (cx - 200) + 'px';
+      ableitImg.style.top  = (cy - 96) + 'px';
+      ableitImg.style.opacity = '1';
+      ableitImg.style.transform = 'rotate(-5deg) scale(1)';
+    });
+
+    ableitCard.addEventListener('mouseleave', () => {
+      ableitImg.style.opacity = '0';
+      ableitImg.style.transform = 'rotate(-5deg) scale(0.85)';
+    });
+
+    // INNOVAJ hover images
+    const ijImgs = [
+      { src: 'assets/IMAGE_INNOVAJ1.png', rot: -8,  dx: -280, dy: -90,  delay: '0s',     w: '210px' },
+      { src: 'assets/IMAGE_INNOVAJ2.png', rot:  5,  dx:  -60, dy: -100, delay: '0.06s',  w: '200px' },
+      { src: 'assets/IMAGE_INNOVAJ3.png', rot: -4,  dx:  100, dy: -70,  delay: '0.12s',  w: '220px' },
+      { src: 'assets/IMAGE_INNOVAJ4.png', rot:  9,  dx:  260, dy: -85,  delay: '0.18s',  w: '195px' },
+    ];
+
+    const ijEls = ijImgs.map(({ src, rot, delay, w }) => {
+      const img = document.createElement('img');
+      img.src = src;
+      img.className = 'exp-card__hover-img';
+      img.setAttribute('aria-hidden', 'true');
+      img.style.width = w;
+      img.style.transform = `rotate(${rot}deg) scale(0.85)`;
+      img.style.transitionDelay = delay;
+      document.body.appendChild(img);
+      return img;
+    });
+
+    const ijCard = document.querySelector('.exp-card--innovaj');
+
+    ijCard.addEventListener('mouseenter', () => {
+      const rect = ijCard.querySelector('.exp-card__inner').getBoundingClientRect();
+      const cx = rect.left + rect.width * 0.5;
+      const cy = rect.top + rect.height * 0.5;
+      ijEls.forEach((img, i) => {
+        img.style.left = (cx + ijImgs[i].dx) + 'px';
+        img.style.top  = (cy + ijImgs[i].dy) + 'px';
+        img.style.opacity = '1';
+        img.style.transform = `rotate(${ijImgs[i].rot}deg) scale(1)`;
+      });
+    });
+
+    ijCard.addEventListener('mouseleave', () => {
+      ijEls.forEach((img, i) => {
+        img.style.opacity = '0';
+        img.style.transform = `rotate(${ijImgs[i].rot}deg) scale(0.85)`;
+      });
+    });
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.14/dist/lenis.min.js"></script>
+  <script src="js/effects.js"></script>
+</body>
+</html>
