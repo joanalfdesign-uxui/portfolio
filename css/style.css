@@ -94,29 +94,62 @@ html { scroll-behavior: auto; } /* Lenis handles smooth scroll */
 }
 
 /* ── Page transition overlay ────────────────────── */
-.page-overlay {
+.page-overlay { display: none; }
+
+/* ── Countdown ──────────────────────────────────── */
+.countdown {
   position: fixed;
   inset: 0;
-  background: #F7F7F7;
-  z-index: 10000;
-  pointer-events: none;
-  opacity: 1;
-  animation: overlay-reveal 0.5s cubic-bezier(0.16, 1, 0.3, 1) 0.05s forwards;
-}
-
-@keyframes overlay-reveal {
-  from { opacity: 1; }
-  to   { opacity: 0; }
-}
-
-.page-overlay.leaving {
-  animation: overlay-cover 0.38s ease forwards;
+  background: #0D0D0D;
+  z-index: 20000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   pointer-events: all;
+  transition: opacity 0.5s ease;
+}
+.countdown.hide {
+  opacity: 0;
+  pointer-events: none;
 }
 
-@keyframes overlay-cover {
-  from { opacity: 0; }
-  to   { opacity: 1; }
+.countdown__slot {
+  height: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.countdown__slot-inner {
+  overflow: hidden;
+  height: 200px;
+  display: flex;
+  align-items: center;
+}
+
+.countdown__number {
+  font-family: 'Boldonse', serif;
+  font-size: 140px;
+  line-height: 1;
+  color: #F7F7F7;
+  display: block;
+  letter-spacing: -0.02em;
+  will-change: transform, opacity;
+}
+
+@keyframes cd-out {
+  from { transform: translateY(0);     opacity: 1; }
+  to   { transform: translateY(120%);  opacity: 0; }
+}
+@keyframes cd-in {
+  from { transform: translateY(-120%); opacity: 0; }
+  to   { transform: translateY(0);     opacity: 1; }
+}
+.countdown__number.out {
+  animation: cd-out 0.3s cubic-bezier(0.4, 0, 1, 1) forwards;
+}
+.countdown__number.in {
+  animation: cd-in 0.35s cubic-bezier(0, 0, 0.2, 1) forwards;
 }
 
 body {

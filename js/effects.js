@@ -2,6 +2,53 @@
    SHARED EFFECTS — grain, cursor, lenis, transitions
    ================================================ */
 
+// ── 0. Countdown intro ───────────────────────────
+(function initCountdown() {
+  const screen = document.getElementById('countdown');
+  const numEl  = document.getElementById('countdown-number');
+  if (!screen || !numEl) return;
+
+  // Only show on first visit — reset clears it
+  if (localStorage.getItem('cd_seen')) {
+    screen.remove();
+    return;
+  }
+  localStorage.setItem('cd_seen', '1');
+
+  const nums = ['3', '2', '1'];
+  let idx = 0;
+
+  function flipTo(next, done) {
+    // Slide current out downward
+    numEl.classList.add('out');
+    setTimeout(() => {
+      numEl.classList.remove('out');
+      numEl.textContent = next;
+      numEl.classList.add('in');
+      setTimeout(() => {
+        numEl.classList.remove('in');
+        done && done();
+      }, 350);
+    }, 300);
+  }
+
+  function run() {
+    if (idx >= nums.length - 1) {
+      setTimeout(() => {
+        screen.classList.add('hide');
+        setTimeout(() => screen.remove(), 500);
+      }, 700);
+      return;
+    }
+    flipTo(nums[idx + 1], () => {
+      idx++;
+      setTimeout(run, 400);
+    });
+  }
+
+  setTimeout(run, 700);
+})();
+
 // ── 1. Smooth scroll (Lenis) ─────────────────────
 if (typeof Lenis !== 'undefined') {
   const lenis = new Lenis({
@@ -49,27 +96,3 @@ if (typeof Lenis !== 'undefined') {
 })();
 
 
-// ── 3. Page transitions ──────────────────────────
-(function initTransitions() {
-  const overlay = document.querySelector('.page-overlay');
-  if (!overlay) return;
-
-  document.querySelectorAll('a[href]').forEach(link => {
-    const href = link.getAttribute('href');
-    if (
-      !href ||
-      href.startsWith('#') ||
-      href.startsWith('mailto:') ||
-      href.startsWith('tel:') ||
-      link.target === '_blank' ||
-      /^https?:\/\//.test(href)
-    ) return;
-
-    link.addEventListener('click', (e) => {
-      e.preventDefault();
-      const dest = link.href;
-      overlay.classList.add('leaving');
-      setTimeout(() => { window.location.href = dest; }, 380);
-    });
-  });
-})();
