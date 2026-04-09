@@ -244,11 +244,9 @@
 
 /* ── Content sections ─────────────────────── */
 .cs-section {
-  display: grid;
-  grid-template-columns: 180px 1fr;
-  gap: 0 72px;
   padding: 0 60px;
   margin-bottom: 72px;
+  max-width: 780px;
 }
 
 .cs-section__label {
@@ -259,7 +257,7 @@
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: #888888;
-  padding-top: 8px;
+  margin-bottom: 16px;
 }
 
 .cs-section__body {
@@ -483,8 +481,7 @@
   .cs-metrics { grid-template-columns: 1fr; padding: 40px 24px; margin: 0 20px 48px; gap: 32px; border-radius: 20px; }
   .cs-metric { border-left: none; border-top: 1px solid rgba(255,255,255,0.1); padding: 32px 0 0; }
   .cs-metric:first-child { border-top: none; padding-top: 0; }
-  .cs-section { grid-template-columns: 1fr; gap: 12px; padding: 0 20px; margin-bottom: 48px; }
-  .cs-section__label { padding-top: 0; }
+  .cs-section { padding: 0 20px; margin-bottom: 48px; }
   .cs-section__body { max-width: none; }
   .cs-section__heading { font-size: 24px; }
   .cs-image { padding: 0 20px; margin-bottom: 48px; }
