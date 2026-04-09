@@ -6,15 +6,17 @@
 .cs-back {
   display: inline-flex;
   align-items: center;
-  gap: 8px;
+  gap: 10px;
   margin: 28px 60px;
-  padding: 12px 20px;
-  border: 1px solid rgba(0,0,0,0.2);
+  padding: 18px 32px;
+  border: 1px solid #000000;
   border-radius: 9999px;
   font-family: 'Albert Sans', sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   font-style: italic;
   font-weight: 400;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
   color: #000000;
   text-decoration: none;
   transition: background 0.2s ease, color 0.2s ease;
@@ -28,7 +30,7 @@
 .cs-back::before {
   content: '←';
   font-style: normal;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 /* ── Hero ─────────────────────────────────── */
