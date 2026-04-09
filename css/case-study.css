@@ -392,10 +392,10 @@
   line-height: 1.3;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  padding: 5px 12px;
+  padding: 4px 10px;
   border-radius: 9999px;
-  background: rgba(255,255,255,0.9);
-  color: #1a1a1a;
+  background: rgba(255,255,255,0.12);
+  color: rgba(255,255,255,0.6);
 }
 
 /* ── cs-next custom cursor ────────────────── */
