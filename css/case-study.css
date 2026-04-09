@@ -394,8 +394,8 @@
   text-transform: uppercase;
   padding: 4px 10px;
   border-radius: 9999px;
-  background: rgba(255,255,255,0.12);
-  color: rgba(255,255,255,0.6);
+  background: rgba(255,255,255,0.15);
+  color: #F7F7F7;
 }
 
 /* ── cs-next custom cursor ────────────────── */
