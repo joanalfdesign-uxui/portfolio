@@ -34,9 +34,9 @@
 }
 
 .cs-back:hover {
-  background: rgba(255,255,255,0.12);
-  color: #fff;
-  border-color: rgba(255,255,255,0.6);
+  background: #F7F7F7;
+  color: #000000;
+  border-color: #F7F7F7;
 }
 
 .cs-back svg {
