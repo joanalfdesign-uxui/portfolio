@@ -382,6 +382,24 @@
   max-width: 420px;
 }
 
+.cs-next__tags {
+  display: flex;
+  gap: 8px;
+}
+
+.cs-next__tag {
+  font-family: 'Albert Sans', sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.3;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 4px 10px;
+  border-radius: 9999px;
+  background: rgba(255,255,255,0.12);
+  color: rgba(255,255,255,0.6);
+}
+
 /* ── cs-next custom cursor ────────────────── */
 .cs-next-cursor {
   position: fixed;
@@ -414,18 +432,21 @@
 .cs-next--upfeup { background: #8C2C16; }
 .cs-next--upfeup .cs-next__title { color: #FBE8CB; }
 .cs-next--upfeup .cs-next__desc  { color: rgba(251,232,203,0.45); }
+.cs-next--upfeup .cs-next__tag   { background: rgba(251,232,203,0.12); color: rgba(251,232,203,0.6); }
 .cs-next--upfeup .cs-next__label { color: rgba(251,232,203,0.35); }
 .cs-next--upfeup .cs-next__btn   { border-color: rgba(251,232,203,0.3); color: rgba(251,232,203,0.7); }
 
 .cs-next--myaj { background: #00320C; }
 .cs-next--myaj .cs-next__title { color: #96FFA8; }
 .cs-next--myaj .cs-next__desc  { color: rgba(150,255,168,0.45); }
+.cs-next--myaj .cs-next__tag   { background: rgba(150,255,168,0.12); color: rgba(150,255,168,0.6); }
 .cs-next--myaj .cs-next__label { color: rgba(150,255,168,0.35); }
 .cs-next--myaj .cs-next__btn   { border-color: rgba(150,255,168,0.3); color: rgba(150,255,168,0.7); }
 
 .cs-next--iokee { background: #0D1733; }
 .cs-next--iokee .cs-next__title { color: #9CC9EF; }
 .cs-next--iokee .cs-next__desc  { color: rgba(156,201,239,0.45); }
+.cs-next--iokee .cs-next__tag   { background: rgba(156,201,239,0.12); color: rgba(156,201,239,0.6); }
 .cs-next--iokee .cs-next__label { color: rgba(156,201,239,0.35); }
 .cs-next--iokee .cs-next__btn   { border-color: rgba(156,201,239,0.3); color: rgba(156,201,239,0.7); }
 
