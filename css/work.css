@@ -36,9 +36,10 @@
 }
 
 .work-hero__heading {
-  font-family: 'Boldonse', 'Boogaloo', sans-serif;
-  font-size: 40px;
-  font-weight: 400;
+  font-family: 'Albert Sans', sans-serif;
+  font-size: clamp(36px, 4vw, 56px);
+  font-weight: 500;
+  letter-spacing: -0.04em;
   color: #000000;
   line-height: 1;
 }
@@ -180,12 +181,13 @@
   gap: 8px;
 }
 
-/* Title — same as home project-card__title */
+/* Title */
 .work-card__title {
-  font-family: 'Boldonse', 'Boogaloo', sans-serif;
-  font-size: 28px;
-  font-weight: 400;
-  line-height: 1.4;
+  font-family: 'Albert Sans', sans-serif;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
   color: #000000;
 }
 

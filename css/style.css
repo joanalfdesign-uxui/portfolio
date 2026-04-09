@@ -494,12 +494,13 @@ ul  { list-style: none; }
   gap: 8px;
 }
 
-/* Title: Boldonse */
+/* Title */
 .project-card__title {
-  font-family: 'Boldonse', 'Boogaloo', sans-serif;
-  font-weight: 400;
-  font-size: 28px;
-  line-height: 1.4;
+  font-family: 'Albert Sans', sans-serif;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
   color: #000000;
 }
 
