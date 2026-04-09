@@ -330,12 +330,18 @@
 
 /* ── Next project ─────────────────────────── */
 .cs-next {
-  border-top: 1px solid rgba(0,0,0,0.08);
-  padding: 64px 60px 80px;
   display: flex;
-  flex-direction: column;
-  gap: 20px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+  margin: 0 32px 40px;
+  padding: 40px 48px;
+  border-radius: 40px;
+  text-decoration: none;
+  transition: opacity 0.2s ease;
 }
+
+.cs-next:hover { opacity: 0.9; }
 
 .cs-next__label {
   font-family: 'Albert Sans', sans-serif;
@@ -343,39 +349,87 @@
   font-weight: 600;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: #888888;
+  color: rgba(255,255,255,0.35);
+  flex-shrink: 0;
 }
 
-.cs-next__link {
-  text-decoration: none;
+.cs-next__body {
   display: flex;
   align-items: center;
-  gap: 20px;
-  transition: gap 0.25s ease;
+  gap: 24px;
+  flex: 1;
 }
 
-.cs-next__link:hover { gap: 32px; }
+.cs-next__thumb {
+  width: 120px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 12px;
+  flex-shrink: 0;
+}
+
+.cs-next__info {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
 
 .cs-next__title {
   font-family: 'Albert Sans', sans-serif;
   font-weight: 600;
-  font-size: clamp(48px, 6vw, 88px);
-  letter-spacing: -0.04em;
-  line-height: 1;
-  color: #000000;
-  transition: opacity 0.2s ease;
+  font-size: clamp(20px, 2.2vw, 32px);
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+  color: #F7F7F7;
 }
 
-.cs-next__link:hover .cs-next__title { opacity: 0.4; }
-
-.cs-next__arrow {
-  font-size: 48px;
-  color: #000000;
-  line-height: 1;
-  transition: opacity 0.2s ease;
+.cs-next__desc {
+  font-family: 'Albert Sans', sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  color: rgba(255,255,255,0.45);
+  max-width: 380px;
 }
 
-.cs-next__link:hover .cs-next__arrow { opacity: 0.4; }
+.cs-next__btn {
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 24px;
+  border: 1px solid rgba(255,255,255,0.3);
+  border-radius: 9999px;
+  font-family: 'Albert Sans', sans-serif;
+  font-size: 13px;
+  font-style: italic;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: rgba(255,255,255,0.6);
+  opacity: 0;
+  transition: opacity 0.25s ease;
+}
+
+.cs-next:hover .cs-next__btn { opacity: 1; }
+
+/* per-project next backgrounds */
+.cs-next--upfeup { background: #8C2C16; }
+.cs-next--upfeup .cs-next__title { color: #FBE8CB; }
+.cs-next--upfeup .cs-next__desc  { color: rgba(251,232,203,0.45); }
+.cs-next--upfeup .cs-next__label { color: rgba(251,232,203,0.35); }
+.cs-next--upfeup .cs-next__btn   { border-color: rgba(251,232,203,0.3); color: rgba(251,232,203,0.7); }
+
+.cs-next--myaj { background: #00320C; }
+.cs-next--myaj .cs-next__title { color: #96FFA8; }
+.cs-next--myaj .cs-next__desc  { color: rgba(150,255,168,0.45); }
+.cs-next--myaj .cs-next__label { color: rgba(150,255,168,0.35); }
+.cs-next--myaj .cs-next__btn   { border-color: rgba(150,255,168,0.3); color: rgba(150,255,168,0.7); }
+
+.cs-next--iokee { background: #0D1733; }
+.cs-next--iokee .cs-next__title { color: #9CC9EF; }
+.cs-next--iokee .cs-next__desc  { color: rgba(156,201,239,0.45); }
+.cs-next--iokee .cs-next__label { color: rgba(156,201,239,0.35); }
+.cs-next--iokee .cs-next__btn   { border-color: rgba(156,201,239,0.3); color: rgba(156,201,239,0.7); }
 
 /* ── Responsive ───────────────────────────── */
 @media (max-width: 768px) {
@@ -399,7 +453,8 @@
   .cs-quote { margin: 0 20px 48px; padding: 32px 24px; }
   .cs-quote__text { font-size: 17px; }
   .cs-divider { margin: 0 20px 48px; }
-  .cs-next { padding: 48px 20px 60px; }
-  .cs-next__title { font-size: 40px; }
-  .cs-next__arrow { font-size: 36px; }
+  .cs-next { margin: 0 12px 24px; padding: 32px 24px; flex-wrap: wrap; gap: 20px; border-radius: 24px; }
+  .cs-next__body { gap: 16px; }
+  .cs-next__thumb { width: 80px; height: 56px; }
+  .cs-next__btn { opacity: 1; }
 }
