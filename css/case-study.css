@@ -385,18 +385,19 @@
 /* ── cs-next custom cursor ────────────────── */
 .cs-next-cursor {
   position: fixed;
+  top: 0;
+  left: 0;
   pointer-events: none;
   z-index: 9999;
   display: flex;
   align-items: center;
   gap: 8px;
-  background: #F7F7F7;
-  color: #000000;
+  background: #000000;
+  color: #F7F7F7;
   padding: 12px 20px;
   border-radius: 100px;
   font-family: 'Albert Sans', sans-serif;
-  font-size: 14px;
-  font-style: italic;
+  font-size: 16px;
   font-weight: 400;
   white-space: nowrap;
   opacity: 0;
