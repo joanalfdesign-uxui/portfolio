@@ -615,8 +615,8 @@ a.project-card:hover {
 
 /* Icon */
 .skills__icon {
-  width: 76px;
-  height: 76px;
+  width: 60px;
+  height: 60px;
   object-fit: contain;
 }
 
