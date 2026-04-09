@@ -330,31 +330,30 @@
 
 /* ── Next project ─────────────────────────── */
 .cs-next {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   align-items: center;
-  gap: 40px;
   margin: 0 32px 40px;
-  padding: 56px 56px;
+  padding: 16px;
   border-radius: 40px;
   text-decoration: none;
   cursor: none;
-  min-height: 260px;
+  min-height: 300px;
+  overflow: hidden;
 }
 
 .cs-next__body {
-  display: flex;
-  align-items: center;
-  gap: 36px;
-  flex: 1;
+  display: contents;
 }
 
 .cs-next__thumb {
-  width: 220px;
-  height: 160px;
+  width: 100%;
+  height: 100%;
+  min-height: 268px;
   object-fit: cover;
-  border-radius: 20px;
-  flex-shrink: 0;
-  transition: transform 0.3s ease;
+  border-radius: 28px;
+  display: block;
+  transition: transform 0.4s ease;
 }
 
 .cs-next:hover .cs-next__thumb { transform: scale(1.03); }
@@ -362,15 +361,16 @@
 .cs-next__info {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 16px;
+  padding: 40px 48px;
 }
 
 .cs-next__title {
   font-family: 'Albert Sans', sans-serif;
   font-weight: 600;
-  font-size: clamp(28px, 3vw, 44px);
+  font-size: clamp(28px, 3vw, 48px);
   letter-spacing: -0.04em;
-  line-height: 1.05;
+  line-height: 1.0;
   color: #F7F7F7;
 }
 
@@ -379,7 +379,7 @@
   font-size: 15px;
   line-height: 1.6;
   color: rgba(255,255,255,0.45);
-  max-width: 420px;
+  max-width: 380px;
 }
 
 .cs-next__tags {
@@ -394,10 +394,10 @@
   line-height: 1.3;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  padding: 4px 10px;
+  padding: 5px 12px;
   border-radius: 9999px;
-  background: rgba(255,255,255,0.12);
-  color: rgba(255,255,255,0.6);
+  background: rgba(255,255,255,0.9);
+  color: #1a1a1a;
 }
 
 /* ── cs-next custom cursor ────────────────── */
@@ -431,24 +431,15 @@
 /* per-project next backgrounds */
 .cs-next--upfeup { background: #8C2C16; }
 .cs-next--upfeup .cs-next__title { color: #FBE8CB; }
-.cs-next--upfeup .cs-next__desc  { color: rgba(251,232,203,0.45); }
-.cs-next--upfeup .cs-next__tag   { background: rgba(251,232,203,0.12); color: rgba(251,232,203,0.6); }
-.cs-next--upfeup .cs-next__label { color: rgba(251,232,203,0.35); }
-.cs-next--upfeup .cs-next__btn   { border-color: rgba(251,232,203,0.3); color: rgba(251,232,203,0.7); }
+.cs-next--upfeup .cs-next__desc  { color: rgba(251,232,203,0.5); }
 
 .cs-next--myaj { background: #00320C; }
 .cs-next--myaj .cs-next__title { color: #96FFA8; }
-.cs-next--myaj .cs-next__desc  { color: rgba(150,255,168,0.45); }
-.cs-next--myaj .cs-next__tag   { background: rgba(150,255,168,0.12); color: rgba(150,255,168,0.6); }
-.cs-next--myaj .cs-next__label { color: rgba(150,255,168,0.35); }
-.cs-next--myaj .cs-next__btn   { border-color: rgba(150,255,168,0.3); color: rgba(150,255,168,0.7); }
+.cs-next--myaj .cs-next__desc  { color: rgba(150,255,168,0.5); }
 
 .cs-next--iokee { background: #0D1733; }
 .cs-next--iokee .cs-next__title { color: #9CC9EF; }
-.cs-next--iokee .cs-next__desc  { color: rgba(156,201,239,0.45); }
-.cs-next--iokee .cs-next__tag   { background: rgba(156,201,239,0.12); color: rgba(156,201,239,0.6); }
-.cs-next--iokee .cs-next__label { color: rgba(156,201,239,0.35); }
-.cs-next--iokee .cs-next__btn   { border-color: rgba(156,201,239,0.3); color: rgba(156,201,239,0.7); }
+.cs-next--iokee .cs-next__desc  { color: rgba(156,201,239,0.5); }
 
 /* ── Responsive ───────────────────────────── */
 @media (max-width: 768px) {
@@ -472,9 +463,10 @@
   .cs-quote { margin: 0 20px 48px; padding: 32px 24px; }
   .cs-quote__text { font-size: 17px; }
   .cs-divider { margin: 0 20px 48px; }
-  .cs-next { margin: 0 12px 24px; padding: 32px 24px; border-radius: 24px; cursor: auto; min-height: auto; }
-  .cs-next__body { gap: 20px; }
-  .cs-next__thumb { width: 120px; height: 88px; }
+  .cs-next { grid-template-columns: 1fr; margin: 0 12px 24px; padding: 12px; border-radius: 24px; cursor: auto; min-height: auto; }
+  .cs-next__body { display: contents; }
+  .cs-next__thumb { min-height: 200px; border-radius: 16px; order: -1; }
+  .cs-next__info { padding: 24px 16px; gap: 12px; }
   .cs-next__title { font-size: 24px; }
   .cs-next-cursor { display: none; }
 }
