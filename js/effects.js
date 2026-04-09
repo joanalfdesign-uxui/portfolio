@@ -96,3 +96,15 @@ if (typeof Lenis !== 'undefined') {
 })();
 
 
+// ── 3. Scroll progress bar ───────────────────────
+(function initProgressBar() {
+  const bar = document.getElementById('navProgress');
+  if (!bar) return;
+  window.addEventListener('scroll', () => {
+    const scrollTop = window.scrollY;
+    const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+    bar.style.width = docHeight > 0 ? (scrollTop / docHeight) * 100 + '%' : '0%';
+  }, { passive: true });
+})();
+
+
