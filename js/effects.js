@@ -114,7 +114,21 @@ if (typeof Lenis !== 'undefined') {
 })();
 
 
-// ── 3. Scroll progress bar ───────────────────────
+// ── 3. Scroll reveal ─────────────────────────────
+(function initScrollReveal() {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('is-visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.12 });
+  document.querySelectorAll('[data-reveal]').forEach(el => observer.observe(el));
+})();
+
+
+// ── 4. Scroll progress bar ───────────────────────
 (function initProgressBar() {
   const bar = document.getElementById('navProgress');
   if (!bar) return;

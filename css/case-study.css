@@ -2,6 +2,37 @@
    CASE STUDY — case-study.css
    ============================================ */
 
+/* ── Hero entrance animation ─────────────── */
+.cs-back {
+  opacity: 0;
+  animation: hero-fade-up 0.6s ease forwards;
+  animation-delay: 0.05s;
+}
+
+.cs-hero__tags {
+  opacity: 0;
+  animation: hero-fade-up 0.6s ease forwards;
+  animation-delay: 0.15s;
+}
+
+.cs-hero__title {
+  opacity: 0;
+  animation: hero-fade-up 0.7s ease forwards;
+  animation-delay: 0.25s;
+}
+
+.cs-hero__intro {
+  opacity: 0;
+  animation: hero-fade-up 0.7s ease forwards;
+  animation-delay: 0.38s;
+}
+
+.cs-meta {
+  opacity: 0;
+  animation: hero-fade-up 0.6s ease forwards;
+  animation-delay: 0.5s;
+}
+
 /* ── Hero ─────────────────────────────────── */
 .cs-hero {
   padding: 20px 32px 0;
