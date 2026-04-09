@@ -231,7 +231,7 @@ ul  { list-style: none; }
    HERO
    ============================================ */
 .hero {
-  padding: 20px 32px 40px;
+  padding: 20px 32px 24px;
 }
 
 .hero__bg {
@@ -341,7 +341,7 @@ ul  { list-style: none; }
    BRANDS TICKER
    ============================================ */
 .brands {
-  padding: 48px 0 32px;
+  padding: 26px 0 24px;
   overflow: hidden;
   position: relative;
 }
@@ -396,8 +396,7 @@ ul  { list-style: none; }
 .projects {
   display: flex;
   justify-content: center;
-  padding: 0 clamp(20px, 13.5vw, 260px);
-  padding-bottom: 80px;
+  padding: 20px clamp(20px, 13.5vw, 260px) 60px;
 }
 
 .projects__inner {
@@ -581,10 +580,10 @@ a.project-card:hover {
    SKILLS
    ============================================ */
 .skills {
-  padding: 80px 60px;
+  padding: 60px 60px;
   display: flex;
   flex-direction: column;
-  gap: 56px;
+  gap: 64px;
 }
 
 /* Heading */
@@ -657,7 +656,7 @@ a.project-card:hover {
    WORK EXPERIENCE
    ============================================ */
 .experience {
-  padding: 100px 60px;
+  padding: 60px 60px;
 }
 
 .experience__top {
@@ -792,8 +791,8 @@ a.project-card:hover {
    TESTIMONIALS
    ============================================ */
 .testimonials {
-  margin-top: 100px;
-  padding-top: 80px;
+  margin-top: 60px;
+  padding-top: 60px;
   display: flex;
   flex-direction: column;
   gap: 64px;
