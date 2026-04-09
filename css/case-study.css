@@ -236,7 +236,7 @@
 .cs-metric__label {
   display: block;
   font-family: 'Albert Sans', sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 400;
   color: rgba(247,247,247,0.45);
   line-height: 1.4;
@@ -254,32 +254,32 @@
 .cs-section__label {
   display: block;
   font-family: 'Albert Sans', sans-serif;
-  font-size: 11px;
+  font-size: 13px;
   font-weight: 600;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: #888888;
-  padding-top: 6px;
+  padding-top: 8px;
 }
 
 .cs-section__body {
-  max-width: 640px;
+  max-width: 680px;
 }
 
 .cs-section__heading {
   font-family: 'Albert Sans', sans-serif;
   font-weight: 400;
-  font-size: 32px;
-  line-height: 1.15;
+  font-size: clamp(32px, 3.2vw, 48px);
+  line-height: 1.1;
   letter-spacing: -0.04em;
   color: #000000;
-  margin-bottom: 24px;
+  margin-bottom: 28px;
 }
 
 .cs-section__text {
   font-family: 'Albert Sans', sans-serif;
-  font-size: 16px;
-  line-height: 1.6;
+  font-size: 18px;
+  line-height: 1.65;
   color: #333333;
   margin: 0;
 }
@@ -345,7 +345,7 @@
 
 .cs-quote__text {
   font-family: 'Albert Sans', sans-serif;
-  font-size: 20px;
+  font-size: 22px;
   font-style: italic;
   line-height: 1.6;
   color: rgba(247,247,247,0.85);
