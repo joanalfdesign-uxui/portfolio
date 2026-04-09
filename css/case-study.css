@@ -268,8 +268,8 @@
 
 .cs-section__heading {
   font-family: 'Albert Sans', sans-serif;
-  font-weight: 600;
-  font-size: clamp(28px, 2.8vw, 44px);
+  font-weight: 400;
+  font-size: 32px;
   line-height: 1.15;
   letter-spacing: -0.04em;
   color: #000000;
