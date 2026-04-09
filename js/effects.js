@@ -77,8 +77,8 @@ if (typeof Lenis !== 'undefined') {
   document.addEventListener('mouseleave', () => circle.classList.add('is-hidden'));
   document.addEventListener('mouseenter', () => circle.classList.remove('is-hidden'));
 
-  // Grow on interactive elements (links, buttons) except project cards
-  const interactive = document.querySelectorAll('a:not(.project-card):not(.work-card), button');
+  // Grow on interactive elements (links, buttons) except project cards and cs-next
+  const interactive = document.querySelectorAll('a:not(.project-card):not(.work-card):not(.cs-next), button');
   interactive.forEach(el => {
     el.addEventListener('mouseenter', () => circle.classList.add('is-large'));
     el.addEventListener('mouseleave', () => circle.classList.remove('is-large'));
@@ -93,6 +93,24 @@ if (typeof Lenis !== 'undefined') {
     });
     card.addEventListener('mouseleave', () => circle.classList.remove('is-hidden'));
   });
+
+  // cs-next: hide circle, show "Read next" pill cursor
+  const csNext = document.querySelector('a.cs-next');
+  const csNextCursor = document.querySelector('.cs-next-cursor');
+  if (csNext && csNextCursor) {
+    document.addEventListener('mousemove', (e) => {
+      csNextCursor.style.left = e.clientX + 'px';
+      csNextCursor.style.top  = e.clientY + 'px';
+    });
+    csNext.addEventListener('mouseenter', () => {
+      csNextCursor.classList.add('visible');
+      circle.classList.add('is-hidden');
+    });
+    csNext.addEventListener('mouseleave', () => {
+      csNextCursor.classList.remove('visible');
+      circle.classList.remove('is-hidden');
+    });
+  }
 })();
 
 

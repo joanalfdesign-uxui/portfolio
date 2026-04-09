@@ -332,85 +332,82 @@
 .cs-next {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 32px;
+  gap: 40px;
   margin: 0 32px 40px;
-  padding: 40px 48px;
+  padding: 56px 56px;
   border-radius: 40px;
   text-decoration: none;
-  transition: opacity 0.2s ease;
-}
-
-.cs-next:hover { opacity: 0.9; }
-
-.cs-next__label {
-  font-family: 'Albert Sans', sans-serif;
-  font-size: 11px;
-  font-weight: 600;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: rgba(255,255,255,0.35);
-  flex-shrink: 0;
+  cursor: none;
+  min-height: 260px;
 }
 
 .cs-next__body {
   display: flex;
   align-items: center;
-  gap: 24px;
+  gap: 36px;
   flex: 1;
 }
 
 .cs-next__thumb {
-  width: 120px;
-  height: 80px;
+  width: 220px;
+  height: 160px;
   object-fit: cover;
-  border-radius: 12px;
+  border-radius: 20px;
   flex-shrink: 0;
+  transition: transform 0.3s ease;
 }
+
+.cs-next:hover .cs-next__thumb { transform: scale(1.03); }
 
 .cs-next__info {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 12px;
 }
 
 .cs-next__title {
   font-family: 'Albert Sans', sans-serif;
   font-weight: 600;
-  font-size: clamp(20px, 2.2vw, 32px);
-  letter-spacing: -0.03em;
-  line-height: 1.1;
+  font-size: clamp(28px, 3vw, 44px);
+  letter-spacing: -0.04em;
+  line-height: 1.05;
   color: #F7F7F7;
 }
 
 .cs-next__desc {
   font-family: 'Albert Sans', sans-serif;
-  font-size: 14px;
-  line-height: 1.5;
+  font-size: 15px;
+  line-height: 1.6;
   color: rgba(255,255,255,0.45);
-  max-width: 380px;
+  max-width: 420px;
 }
 
-.cs-next__btn {
-  flex-shrink: 0;
-  display: inline-flex;
+/* ── cs-next custom cursor ────────────────── */
+.cs-next-cursor {
+  position: fixed;
+  pointer-events: none;
+  z-index: 9999;
+  display: flex;
   align-items: center;
   gap: 8px;
-  padding: 14px 24px;
-  border: 1px solid rgba(255,255,255,0.3);
-  border-radius: 9999px;
+  background: #F7F7F7;
+  color: #000000;
+  padding: 12px 20px;
+  border-radius: 100px;
   font-family: 'Albert Sans', sans-serif;
-  font-size: 13px;
+  font-size: 14px;
   font-style: italic;
   font-weight: 400;
-  text-transform: uppercase;
-  letter-spacing: 0.03em;
-  color: rgba(255,255,255,0.6);
+  white-space: nowrap;
   opacity: 0;
-  transition: opacity 0.25s ease;
+  transform: translate(-50%, -50%) scale(0.8);
+  transition: opacity 0.2s ease, transform 0.2s ease;
 }
 
-.cs-next:hover .cs-next__btn { opacity: 1; }
+.cs-next-cursor.visible {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+}
 
 /* per-project next backgrounds */
 .cs-next--upfeup { background: #8C2C16; }
@@ -453,8 +450,9 @@
   .cs-quote { margin: 0 20px 48px; padding: 32px 24px; }
   .cs-quote__text { font-size: 17px; }
   .cs-divider { margin: 0 20px 48px; }
-  .cs-next { margin: 0 12px 24px; padding: 32px 24px; flex-wrap: wrap; gap: 20px; border-radius: 24px; }
-  .cs-next__body { gap: 16px; }
-  .cs-next__thumb { width: 80px; height: 56px; }
-  .cs-next__btn { opacity: 1; }
+  .cs-next { margin: 0 12px 24px; padding: 32px 24px; border-radius: 24px; cursor: auto; min-height: auto; }
+  .cs-next__body { gap: 20px; }
+  .cs-next__thumb { width: 120px; height: 88px; }
+  .cs-next__title { font-size: 24px; }
+  .cs-next-cursor { display: none; }
 }
