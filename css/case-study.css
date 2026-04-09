@@ -166,7 +166,7 @@
 /* ── Per-project metrics + quote colours ─── */
 .project-upfeup .cs-metrics        { background: #8C2C16; }
 .project-upfeup .cs-metric__number { color: #FBE8CB; }
-.project-upfeup .cs-metric__label  { color: rgba(251,232,203,0.5); }
+.project-upfeup .cs-metric__label  { color: #FBE8CB; }
 .project-upfeup .cs-metric         { border-left-color: rgba(251,232,203,0.12); }
 .project-upfeup .cs-quote          { background: #8C2C16; }
 .project-upfeup .cs-quote__label   { color: rgba(251,232,203,0.4); }
@@ -174,7 +174,7 @@
 
 .project-myaj .cs-metrics          { background: #00320C; }
 .project-myaj .cs-metric__number   { color: #96FFA8; }
-.project-myaj .cs-metric__label    { color: rgba(150,255,168,0.5); }
+.project-myaj .cs-metric__label    { color: #96FFA8; }
 .project-myaj .cs-metric           { border-left-color: rgba(150,255,168,0.12); }
 .project-myaj .cs-quote            { background: #00320C; }
 .project-myaj .cs-quote__label     { color: rgba(150,255,168,0.4); }
@@ -182,7 +182,7 @@
 
 .project-iokee .cs-metrics         { background: #0D1733; }
 .project-iokee .cs-metric__number  { color: #9CC9EF; }
-.project-iokee .cs-metric__label   { color: rgba(156,201,239,0.5); }
+.project-iokee .cs-metric__label   { color: #9CC9EF; }
 .project-iokee .cs-metric          { border-left-color: rgba(156,201,239,0.12); }
 .project-iokee .cs-quote           { background: #0D1733; }
 .project-iokee .cs-quote__label    { color: rgba(156,201,239,0.4); }
@@ -238,7 +238,7 @@
   font-family: 'Albert Sans', sans-serif;
   font-size: 16px;
   font-weight: 400;
-  color: rgba(247,247,247,0.45);
+  color: #F7F7F7;
   line-height: 1.4;
 }
 
