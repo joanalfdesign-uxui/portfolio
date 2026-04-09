@@ -376,7 +376,7 @@
   font-family: 'Albert Sans', sans-serif;
   font-size: 15px;
   line-height: 1.6;
-  color: rgba(255,255,255,0.45);
+  color: #F7F7F7;
   max-width: 380px;
 }
 
@@ -429,15 +429,15 @@
 /* per-project next backgrounds */
 .cs-next--upfeup { background: #8C2C16; }
 .cs-next--upfeup .cs-next__title { color: #FBE8CB; }
-.cs-next--upfeup .cs-next__desc  { color: rgba(251,232,203,0.5); }
+.cs-next--upfeup .cs-next__desc  { color: #FBE8CB; }
 
 .cs-next--myaj { background: #00320C; }
 .cs-next--myaj .cs-next__title { color: #96FFA8; }
-.cs-next--myaj .cs-next__desc  { color: rgba(150,255,168,0.5); }
+.cs-next--myaj .cs-next__desc  { color: #96FFA8; }
 
 .cs-next--iokee { background: #0D1733; }
 .cs-next--iokee .cs-next__title { color: #9CC9EF; }
-.cs-next--iokee .cs-next__desc  { color: rgba(156,201,239,0.5); }
+.cs-next--iokee .cs-next__desc  { color: #9CC9EF; }
 
 /* ── Responsive ───────────────────────────── */
 @media (max-width: 768px) {
