@@ -236,6 +236,34 @@
   display: block;
 }
 
+/* ── Retrospective quote ─────────────────── */
+.cs-quote {
+  margin: 0 60px 72px;
+  padding: 32px 40px;
+  border: 1px solid rgba(0,0,0,0.12);
+  border-radius: 16px;
+}
+
+.cs-quote__label {
+  display: block;
+  font-family: 'Albert Sans', sans-serif;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #888;
+  margin-bottom: 16px;
+}
+
+.cs-quote__text {
+  font-family: 'Albert Sans', sans-serif;
+  font-size: 16px;
+  font-style: italic;
+  line-height: 1.75;
+  color: #555;
+  margin: 0;
+}
+
 /* ── Divider ──────────────────────────────── */
 .cs-divider {
   border: none;
@@ -305,6 +333,7 @@
   .cs-section__heading { font-size: 22px; }
   .cs-image { padding: 0 20px; margin-bottom: 48px; }
   .cs-image-grid { grid-template-columns: 1fr; padding: 0 20px; }
+  .cs-quote { margin: 0 20px 48px; padding: 24px 20px; }
   .cs-divider { margin: 0 20px 48px; }
   .cs-next { padding: 40px 20px; flex-direction: column; align-items: flex-start; gap: 16px; }
   .cs-next__title { font-size: 28px; }
