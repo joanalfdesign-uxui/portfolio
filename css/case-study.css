@@ -390,7 +390,7 @@
   display: flex;
   flex-direction: column;
   gap: 16px;
-  padding: 40px 48px;
+  padding: 40px 16px 40px 48px;
 }
 
 .cs-next__title {
