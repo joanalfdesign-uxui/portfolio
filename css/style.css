@@ -366,6 +366,32 @@ ul  { list-style: none; }
   position: relative;
 }
 
+.brands__badge {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.85);
+  z-index: 3;
+  background: #000000;
+  color: #F7F7F7;
+  font-family: 'Albert Sans', sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  font-style: italic;
+  letter-spacing: 0.01em;
+  padding: 12px 24px;
+  border-radius: 9999px;
+  white-space: nowrap;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.25s ease, transform 0.25s ease;
+}
+
+.brands:hover .brands__badge {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+}
+
 .brands::before,
 .brands::after {
   content: '';
