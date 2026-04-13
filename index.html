@@ -409,11 +409,18 @@
     // Custom cursor for project cards (lerp)
     const cursor = document.querySelector('.project-cursor');
     const cards = document.querySelectorAll('a.project-card');
+    const brandsBadge = document.querySelector('.brands__badge');
+    const brandsSection = document.querySelector('.brands');
 
     document.addEventListener('mousemove', (e) => {
       cursor.style.left = e.clientX + 'px';
       cursor.style.top  = e.clientY + 'px';
+      brandsBadge.style.left = e.clientX + 'px';
+      brandsBadge.style.top  = e.clientY + 'px';
     });
+
+    brandsSection.addEventListener('mouseenter', () => brandsBadge.classList.add('visible'));
+    brandsSection.addEventListener('mouseleave', () => brandsBadge.classList.remove('visible'));
 
     cards.forEach(card => {
       card.addEventListener('mouseenter', () => cursor.classList.add('visible'));

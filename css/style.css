@@ -367,11 +367,11 @@ ul  { list-style: none; }
 }
 
 .brands__badge {
-  position: absolute;
-  top: 50%;
-  left: 50%;
+  position: fixed;
+  top: 0;
+  left: 0;
   transform: translate(-50%, -50%) scale(0.8);
-  z-index: 3;
+  z-index: 9999;
   background: #000000;
   color: #F7F7F7;
   font-family: 'Albert Sans', sans-serif;
@@ -385,7 +385,7 @@ ul  { list-style: none; }
   transition: opacity 0.2s ease, transform 0.2s ease;
 }
 
-.brands:hover .brands__badge {
+.brands__badge.visible {
   opacity: 1;
   transform: translate(-50%, -50%) scale(1);
 }
