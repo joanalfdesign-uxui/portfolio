@@ -43,6 +43,26 @@ html { scroll-behavior: auto; } /* Lenis handles smooth scroll */
   border-radius: 4px;
 }
 
+/* Rounded cards & pill buttons */
+.project-card:focus-visible,
+.work-card:focus-visible {
+  outline: 2px solid #F2818E;
+  outline-offset: 4px;
+  border-radius: 40px;
+}
+
+.work-filter:focus-visible {
+  outline: 2px solid #F2818E;
+  outline-offset: 3px;
+  border-radius: 9999px;
+}
+
+.nav__link:focus-visible {
+  outline: 2px solid #F2818E;
+  outline-offset: 4px;
+  border-radius: 4px;
+}
+
 /* ── Custom cursor ──────────────────────────────── */
 /* cursor: none only applied when JS loads successfully */
 .cursor-ready,

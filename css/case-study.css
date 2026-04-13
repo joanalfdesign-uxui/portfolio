@@ -45,6 +45,18 @@
 }
 
 /* Back link — lives inside the dark hero bg */
+.cs-back:focus-visible {
+  outline: 2px solid #F7F7F7;
+  outline-offset: 4px;
+  border-radius: 9999px;
+}
+
+.cs-next:focus-visible {
+  outline: 2px solid #F7F7F7;
+  outline-offset: 4px;
+  border-radius: 40px;
+}
+
 .cs-back {
   display: inline-flex;
   align-items: center;
