@@ -633,7 +633,7 @@ a.project-card:hover {
   line-height: 1.15;
   letter-spacing: -0.04em;
   color: #000000;
-  opacity: 0.4;
+  opacity: 0.65;
   transition: opacity 0.25s ease, font-weight 0.15s ease;
 }
 
