@@ -1180,9 +1180,9 @@ a.project-card:hover {
   }
 
   .site-footer__nav-list {
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 8px;
+    flex-direction: column;
+    
+    gap: 0;
   }
 
   .site-footer__nav-item {
@@ -1191,9 +1191,9 @@ a.project-card:hover {
   }
 
   .site-footer__nav-link {
-    padding: 16px 20px;
-    background: rgba(255,255,255,0.08);
-    border-radius: 100px;
+    padding: 14px 0;
+    background: none;
+    border-radius: 0;
     height: auto;
   }
 
