@@ -370,21 +370,19 @@ ul  { list-style: none; }
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%) scale(0.85);
+  transform: translate(-50%, -50%) scale(0.8);
   z-index: 3;
   background: #000000;
   color: #F7F7F7;
   font-family: 'Albert Sans', sans-serif;
-  font-size: 15px;
-  font-weight: 500;
-  font-style: italic;
-  letter-spacing: 0.01em;
-  padding: 12px 24px;
-  border-radius: 9999px;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 12px 20px;
+  border-radius: 100px;
   white-space: nowrap;
   pointer-events: none;
   opacity: 0;
-  transition: opacity 0.25s ease, transform 0.25s ease;
+  transition: opacity 0.2s ease, transform 0.2s ease;
 }
 
 .brands:hover .brands__badge {
