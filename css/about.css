@@ -146,12 +146,12 @@
   box-shadow: inset 0 0 0 1px rgba(255,255,255,0.18);
 }
 
-.about-card--pink   { background: #411503; }
+.about-card--pink   { background: #440230; }
 .about-card--yellow { background: #00320C; }
 .about-card--blue   { background: #0D1733; }
 
 .about-card--pink  .about-card__title,
-.about-card--pink  .about-card__desc { color: #FBE8CB; }
+.about-card--pink  .about-card__desc { color: #F2818E; }
 
 .about-card--yellow .about-card__title,
 .about-card--yellow .about-card__desc { color: #96FFA8; }
