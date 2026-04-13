@@ -163,6 +163,10 @@
 .cs-hero--iokee .cs-meta__label { color: rgba(156,201,239,0.45); }
 .cs-hero--iokee .cs-meta__value { color: #9CC9EF; }
 
+.cs-hero--pa .cs-hero__bg     { background: #440230; }
+.cs-hero--pa .cs-meta__label  { color: rgba(242,129,142,0.45); }
+.cs-hero--pa .cs-meta__value  { color: #F2818E; }
+
 /* ── Per-project metrics + quote colours ─── */
 .project-upfeup .cs-metrics        { background: #8C2C16; }
 .project-upfeup .cs-metric__number { color: #FBE8CB; }
@@ -187,6 +191,18 @@
 .project-iokee .cs-quote           { background: #0D1733; }
 .project-iokee .cs-quote__label    { color: rgba(156,201,239,0.4); }
 .project-iokee .cs-quote__text     { color: rgba(156,201,239,0.9); }
+
+.project-pa .cs-metrics            { background: #440230; }
+.project-pa .cs-metric__number     { color: #F2818E; }
+.project-pa .cs-metric__label      { color: #F2818E; }
+.project-pa .cs-metric             { border-left-color: rgba(242,129,142,0.12); }
+.project-pa .cs-quote              { background: #440230; }
+.project-pa .cs-quote__label       { color: rgba(242,129,142,0.4); }
+.project-pa .cs-quote__text        { color: rgba(242,129,142,0.9); }
+
+.cs-next--pa { background: #440230; }
+.cs-next--pa .cs-next__title { color: #F2818E; }
+.cs-next--pa .cs-next__desc  { color: #F2818E; }
 
 /* ── Cover image ──────────────────────────── */
 .cs-cover {
