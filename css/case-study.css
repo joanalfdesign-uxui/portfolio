@@ -179,6 +179,7 @@
 .cs-hero--pa .cs-hero__bg     { background: #411503; }
 .cs-hero--pa .cs-meta__label  { color: rgba(251,232,203,0.45); }
 .cs-hero--pa .cs-meta__value  { color: #FBE8CB; }
+.cs-hero--pa .cs-meta { grid-template-columns: repeat(5, 1fr); }
 
 /* ── Per-project metrics + quote colours ─── */
 .project-upfeup .cs-metrics        { background: #440230; }
