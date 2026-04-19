@@ -879,12 +879,12 @@ a.project-card:hover {
   min-height: 260px;
 }
 
-.testimonial:nth-child(1) { background: #411503; }
+.testimonial:nth-child(1) { background: #440230; }
 .testimonial:nth-child(2) { background: #00320C; }
 
 .testimonial:nth-child(1) .testimonial__quote,
 .testimonial:nth-child(1) .testimonial__text,
-.testimonial:nth-child(1) .testimonial__author { color: #FBE8CB; }
+.testimonial:nth-child(1) .testimonial__author { color: #F2818E; }
 
 .testimonial:nth-child(2) .testimonial__quote,
 .testimonial:nth-child(2) .testimonial__text,
