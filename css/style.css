@@ -43,6 +43,12 @@ html { scroll-behavior: auto; } /* Lenis handles smooth scroll */
   border-radius: 4px;
 }
 
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid #F2818E;
+  outline-offset: 3px;
+}
+
 /* Rounded cards & pill buttons */
 .project-card:focus-visible,
 .work-card:focus-visible {
@@ -51,16 +57,30 @@ html { scroll-behavior: auto; } /* Lenis handles smooth scroll */
   border-radius: 40px;
 }
 
-.work-filter:focus-visible {
+.work-filter:focus-visible,
+.cs-back:focus-visible,
+.notfound__btn:focus-visible,
+.site-footer__nav-link:focus-visible {
   outline: 2px solid #F2818E;
   outline-offset: 3px;
   border-radius: 9999px;
 }
 
-.nav__link:focus-visible {
+.nav__link:focus-visible,
+.site-footer__email:focus-visible,
+.site-footer__profile:focus-visible {
   outline: 2px solid #F2818E;
   outline-offset: 4px;
   border-radius: 4px;
+}
+
+.site-footer__social:focus-visible,
+.cs-lightbox__close:focus-visible,
+.cs-lightbox__prev:focus-visible,
+.cs-lightbox__next:focus-visible {
+  outline: 2px solid #F2818E;
+  outline-offset: 3px;
+  border-radius: 50%;
 }
 
 /* ── Custom cursor ──────────────────────────────── */
@@ -1130,19 +1150,28 @@ a.project-card:hover {
 }
 
 .site-footer__social {
-  transition: opacity 0.2s ease;
-  display: inline-block;
-  opacity: 0.7;
+  transition: background 0.2s ease, border-color 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1.5px solid rgba(247,247,247,0.3);
+  background: rgba(247,247,247,0.05);
 }
 
-.site-footer__social:hover { opacity: 1; }
+.site-footer__social:hover {
+  background: rgba(242,129,142,0.15);
+  border-color: #F2818E;
+}
 .site-footer__social:hover img { filter: brightness(0) saturate(100%) invert(62%) sepia(40%) saturate(800%) hue-rotate(300deg) brightness(110%); }
 
 .site-footer__social img {
   filter: brightness(0) invert(1);
   transition: filter 0.2s ease;
-  width: 28px;
-  height: 28px;
+  width: 22px;
+  height: 22px;
   display: block;
 }
 
@@ -1280,9 +1309,9 @@ a.project-card:hover {
   .exp-card__hover-img { display: none; }
 
   /* Testimonials */
-  .testimonials { padding-top: 40px; margin-top: 60px; }
+  .testimonials { padding-top: 40px; margin-top: 40px; gap: 32px; }
   .testimonials__heading { font-size: 24px; }
-  .testimonials__list { flex-direction: column; }
+  .testimonials__list { flex-direction: column; gap: 16px; }
   .testimonial { padding: 32px 24px; min-height: auto; }
   .testimonial__text { font-size: 18px; }
   .testimonial__author { font-size: 13px; }

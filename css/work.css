@@ -11,15 +11,25 @@
 
 /* ── Page entrance animation ────────────────── */
 .work-hero__heading {
-  opacity: 0;
-  animation: hero-fade-up 0.7s ease forwards;
+  animation: hero-fade-up 0.7s ease both;
   animation-delay: 0.1s;
 }
 
 .work-hero__filters {
-  opacity: 0;
-  animation: hero-fade-up 0.7s ease forwards;
+  animation: hero-fade-up 0.7s ease both;
   animation-delay: 0.25s;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .work-hero__heading,
+  .work-hero__filters,
+  .work-card:nth-child(1),
+  .work-card:nth-child(2),
+  .work-card:nth-child(3),
+  .work-card:nth-child(4) {
+    animation: none;
+    opacity: 1;
+  }
 }
 
 /* ── Hero ──────────────────────────────────── */
@@ -87,24 +97,20 @@
 
 /* ── Card entrance animations ───────────────── */
 .work-card:nth-child(1) {
-  opacity: 0;
-  animation: hero-fade-up 0.7s ease forwards;
+  animation: hero-fade-up 0.7s ease both;
   animation-delay: 0.4s;
 }
 .work-card:nth-child(2) {
-  opacity: 0;
-  animation: hero-fade-up 0.7s ease forwards;
+  animation: hero-fade-up 0.7s ease both;
   animation-delay: 0.52s;
 }
 .work-card:nth-child(4) {
-  opacity: 0;
-  animation: hero-fade-up 0.7s ease forwards;
+  animation: hero-fade-up 0.7s ease both;
   animation-delay: 0.76s;
 }
 
 .work-card:nth-child(3) {
-  opacity: 0;
-  animation: hero-fade-up 0.7s ease forwards;
+  animation: hero-fade-up 0.7s ease both;
   animation-delay: 0.64s;
 }
 
@@ -233,9 +239,14 @@
 
   .work-hero__heading { font-size: 28px; }
 
-  .work-hero__filters { flex-wrap: wrap; }
+  .work-hero__filters { flex-wrap: wrap; gap: 6px; }
 
   .work-filter { font-size: 14px; padding: 10px 16px; }
+}
+
+@media (max-width: 360px) {
+  .work-filter { font-size: 13px; padding: 8px 12px; }
+  .work-hero__heading { font-size: 26px; }
 
   .work-grid { padding: 0 12px 60px; }
 

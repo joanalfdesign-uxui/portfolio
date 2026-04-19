@@ -148,6 +148,7 @@ if (typeof Lenis !== 'undefined') {
     <img class="cs-lightbox__img" src="" alt="" />
     <button class="cs-lightbox__next" aria-label="Next">&#8594;</button>
     <span class="cs-lightbox__counter"></span>
+    <span class="cs-lightbox__hint">Press ESC or click outside to close</span>
   `;
   document.body.appendChild(lb);
 

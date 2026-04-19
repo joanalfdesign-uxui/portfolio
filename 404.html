@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Page not found — Joana Filipe</title>
+  <meta name="description" content="This page doesn't exist. Head back to Joana Filipe's portfolio." />
+  <meta name="robots" content="noindex" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/FAVICON16.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/FAVICON32.png" />
+  <link rel="apple-touch-icon" sizes="64x64" href="/assets/FAVICON64.png" />
+  <link rel="stylesheet" href="/css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&family=Boldonse&display=swap" rel="stylesheet" />
+  <style>
+    .notfound {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 80px 32px;
+      text-align: center;
+      gap: 24px;
+    }
+    .notfound__code {
+      font-family: 'Boldonse', serif;
+      font-size: clamp(96px, 18vw, 200px);
+      font-weight: 400;
+      line-height: 0.9;
+      letter-spacing: -0.04em;
+      color: #0D0D0D;
+      margin: 0;
+    }
+    .notfound__title {
+      font-family: 'Albert Sans', sans-serif;
+      font-size: clamp(24px, 3vw, 36px);
+      font-weight: 500;
+      letter-spacing: -0.03em;
+      color: #0D0D0D;
+      margin: 0;
+    }
+    .notfound__text {
+      font-family: 'Albert Sans', sans-serif;
+      font-size: 18px;
+      line-height: 1.5;
+      color: rgba(13,13,13,0.7);
+      max-width: 480px;
+      margin: 0;
+    }
+    .notfound__actions {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 16px;
+    }
+    .notfound__btn {
+      font-family: 'Albert Sans', sans-serif;
+      font-size: 16px;
+      font-weight: 500;
+      padding: 14px 28px;
+      border-radius: 9999px;
+      border: 1.5px solid #0D0D0D;
+      background: transparent;
+      color: #0D0D0D;
+      text-decoration: none;
+      transition: background 0.2s ease, color 0.2s ease;
+    }
+    .notfound__btn:hover {
+      background: #0D0D0D;
+      color: #F7F7F7;
+    }
+    .notfound__btn--primary {
+      background: #0D0D0D;
+      color: #F7F7F7;
+    }
+    .notfound__btn--primary:hover {
+      background: transparent;
+      color: #0D0D0D;
+    }
+  </style>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="custom-cursor" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <ul class="nav__list">
+        <li><a href="/index.html" class="nav__link">Home</a></li>
+        <li><a href="/work/" class="nav__link">Selected Work</a></li>
+        <li><a href="/about.html" class="nav__link">About me</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-content" class="notfound">
+    <p class="notfound__code">404</p>
+    <h1 class="notfound__title">This page got lost along the way.</h1>
+    <p class="notfound__text">The link you followed may be broken, or the page may have been moved. Let's get you back on track.</p>
+    <div class="notfound__actions">
+      <a href="/index.html" class="notfound__btn notfound__btn--primary">Back to home</a>
+      <a href="/work/" class="notfound__btn">See selected work</a>
+    </div>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.14/dist/lenis.min.js"></script>
+  <script src="/js/effects.js"></script>
+</body>
+</html>
