@@ -82,8 +82,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 24px;
-  /* Odd cards stay in their column — no stretching */
-  align-items: start;
+  align-items: stretch;
 }
 
 /* ── Card entrance animations ───────────────── */
