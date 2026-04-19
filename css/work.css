@@ -242,11 +242,6 @@
   .work-hero__filters { flex-wrap: wrap; gap: 6px; }
 
   .work-filter { font-size: 14px; padding: 10px 16px; }
-}
-
-@media (max-width: 360px) {
-  .work-filter { font-size: 13px; padding: 8px 12px; }
-  .work-hero__heading { font-size: 26px; }
 
   .work-grid { padding: 0 12px 60px; }
 
@@ -262,4 +257,9 @@
   .work-card__title { font-size: 22px; }
 
   .work-card__desc { font-size: 14px; }
+}
+
+@media (max-width: 360px) {
+  .work-filter { font-size: 13px; padding: 8px 12px; }
+  .work-hero__heading { font-size: 26px; }
 }
