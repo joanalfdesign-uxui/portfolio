@@ -52,10 +52,10 @@
       <div class="work-hero__header">
         <h1 class="work-hero__heading">Selected work</h1>
         <div class="work-hero__filters" role="group" aria-label="Filter projects">
-          <button class="work-filter work-filter--active" data-filter="all">All projects</button>
-          <button class="work-filter" data-filter="web">Web</button>
-          <button class="work-filter" data-filter="mobile">Mobile</button>
-          <button class="work-filter" data-filter="brand">Other</button>
+          <button class="work-filter work-filter--active" data-filter="all" aria-pressed="true">All projects</button>
+          <button class="work-filter" data-filter="web" aria-pressed="false">Web</button>
+          <button class="work-filter" data-filter="mobile" aria-pressed="false">Mobile</button>
+          <button class="work-filter" data-filter="brand" aria-pressed="false">Other</button>
         </div>
       </div>
     </section>
@@ -152,7 +152,7 @@
             <p class="site-footer__contact-item">Portugal</p>
             <a href="mailto:joanalf.design@gmail.com" class="site-footer__contact-item site-footer__email">joanalf.design@gmail.com</a>
             <a href="https://www.linkedin.com/in/joanalf-uxuidesign/" target="_blank" rel="noopener noreferrer" class="site-footer__social" aria-label="LinkedIn">
-              <img src="../assets/LINKEDIN_ICON.png" alt="LinkedIn" width="24" height="24" />
+              <img src="../assets/LINKEDIN_ICON.png" alt="" width="24" height="24" aria-hidden="true" />
             </a>
           </div>
         </div>
@@ -250,8 +250,9 @@
 
     filters.forEach(btn => {
       btn.addEventListener('click', () => {
-        filters.forEach(b => b.classList.remove('work-filter--active'));
+        filters.forEach(b => { b.classList.remove('work-filter--active'); b.setAttribute('aria-pressed', 'false'); });
         btn.classList.add('work-filter--active');
+        btn.setAttribute('aria-pressed', 'true');
 
         const filter = btn.dataset.filter;
         filterCards.forEach(card => {
