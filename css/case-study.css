@@ -390,6 +390,12 @@
   display: block;
 }
 
+.project-pa .cs-image-grid img {
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  object-position: center top;
+}
+
 /* ── Retrospective quote ─────────────────── */
 .cs-quote {
   background: #000000;
