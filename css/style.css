@@ -1162,10 +1162,10 @@ a.project-card:hover {
 }
 
 .site-footer__social:hover {
-  background: rgba(242,129,142,0.15);
-  border-color: #F2818E;
+  background: #F7F7F7;
+  border-color: #F7F7F7;
 }
-.site-footer__social:hover img { filter: brightness(0) saturate(100%) invert(62%) sepia(40%) saturate(800%) hue-rotate(300deg) brightness(110%); }
+.site-footer__social:hover img { filter: brightness(0); }
 
 .site-footer__social img {
   filter: brightness(0) invert(1);
