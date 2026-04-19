@@ -467,12 +467,12 @@ ul  { list-style: none; }
 .project-card:nth-child(2) { top: 96px;  z-index: 2; }
 .project-card:nth-child(3) { top: 112px; z-index: 3; }
 
-.project-card--upfeup { background: #411503; }
+.project-card--upfeup { background: #440230; }
 .project-card--myaj   { background: #00320C; }
 .project-card--iokee  { background: #0D1733; }
 
 .project-card--upfeup .project-card__title,
-.project-card--upfeup .project-card__desc { color: #FBE8CB; }
+.project-card--upfeup .project-card__desc { color: #F2818E; }
 
 .project-card--myaj .project-card__title,
 .project-card--myaj .project-card__desc { color: #96FFA8; }
@@ -872,12 +872,12 @@ a.project-card:hover {
   min-height: 260px;
 }
 
-.testimonial:nth-child(1) { background: #440230; }
+.testimonial:nth-child(1) { background: #411503; }
 .testimonial:nth-child(2) { background: #00320C; }
 
 .testimonial:nth-child(1) .testimonial__quote,
 .testimonial:nth-child(1) .testimonial__text,
-.testimonial:nth-child(1) .testimonial__author { color: #F2818E; }
+.testimonial:nth-child(1) .testimonial__author { color: #FBE8CB; }
 
 .testimonial:nth-child(2) .testimonial__quote,
 .testimonial:nth-child(2) .testimonial__text,

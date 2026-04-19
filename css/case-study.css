@@ -163,9 +163,9 @@
 }
 
 /* ── Per-project hero colours ─────────────── */
-.cs-hero--upfeup .cs-hero__bg { background: #411503; }
-.cs-hero--upfeup .cs-meta__label { color: rgba(251,232,203,0.45); }
-.cs-hero--upfeup .cs-meta__value { color: #FBE8CB; }
+.cs-hero--upfeup .cs-hero__bg { background: #440230; }
+.cs-hero--upfeup .cs-meta__label { color: rgba(242,129,142,0.45); }
+.cs-hero--upfeup .cs-meta__value { color: #F2818E; }
 
 .cs-hero--myaj .cs-hero__bg   { background: #00320C; }
 .cs-hero--myaj .cs-meta__label { color: rgba(150,255,168,0.45); }
@@ -175,18 +175,18 @@
 .cs-hero--iokee .cs-meta__label { color: rgba(156,201,239,0.45); }
 .cs-hero--iokee .cs-meta__value { color: #9CC9EF; }
 
-.cs-hero--pa .cs-hero__bg     { background: #440230; }
-.cs-hero--pa .cs-meta__label  { color: rgba(242,129,142,0.45); }
-.cs-hero--pa .cs-meta__value  { color: #F2818E; }
+.cs-hero--pa .cs-hero__bg     { background: #411503; }
+.cs-hero--pa .cs-meta__label  { color: rgba(251,232,203,0.45); }
+.cs-hero--pa .cs-meta__value  { color: #FBE8CB; }
 
 /* ── Per-project metrics + quote colours ─── */
-.project-upfeup .cs-metrics        { background: #411503; }
-.project-upfeup .cs-metric__number { color: #FBE8CB; }
-.project-upfeup .cs-metric__label  { color: #FBE8CB; }
-.project-upfeup .cs-metric         { border-left-color: rgba(251,232,203,0.12); }
-.project-upfeup .cs-quote          { background: #411503; }
-.project-upfeup .cs-quote__label   { color: rgba(251,232,203,0.4); }
-.project-upfeup .cs-quote__text    { color: rgba(251,232,203,0.9); }
+.project-upfeup .cs-metrics        { background: #440230; }
+.project-upfeup .cs-metric__number { color: #F2818E; }
+.project-upfeup .cs-metric__label  { color: #F2818E; }
+.project-upfeup .cs-metric         { border-left-color: rgba(242,129,142,0.12); }
+.project-upfeup .cs-quote          { background: #440230; }
+.project-upfeup .cs-quote__label   { color: rgba(242,129,142,0.4); }
+.project-upfeup .cs-quote__text    { color: rgba(242,129,142,0.9); }
 
 .project-myaj .cs-metrics          { background: #00320C; }
 .project-myaj .cs-metric__number   { color: #96FFA8; }
@@ -204,17 +204,17 @@
 .project-iokee .cs-quote__label    { color: rgba(156,201,239,0.4); }
 .project-iokee .cs-quote__text     { color: rgba(156,201,239,0.9); }
 
-.project-pa .cs-metrics            { background: #440230; }
-.project-pa .cs-metric__number     { color: #F2818E; }
-.project-pa .cs-metric__label      { color: #F2818E; }
-.project-pa .cs-metric             { border-left-color: rgba(242,129,142,0.12); }
-.project-pa .cs-quote              { background: #440230; }
-.project-pa .cs-quote__label       { color: rgba(242,129,142,0.4); }
-.project-pa .cs-quote__text        { color: rgba(242,129,142,0.9); }
+.project-pa .cs-metrics            { background: #411503; }
+.project-pa .cs-metric__number     { color: #FBE8CB; }
+.project-pa .cs-metric__label      { color: #FBE8CB; }
+.project-pa .cs-metric             { border-left-color: rgba(251,232,203,0.12); }
+.project-pa .cs-quote              { background: #411503; }
+.project-pa .cs-quote__label       { color: rgba(251,232,203,0.4); }
+.project-pa .cs-quote__text        { color: rgba(251,232,203,0.9); }
 
-.cs-next--pa { background: #440230; }
-.cs-next--pa .cs-next__title { color: #F2818E; }
-.cs-next--pa .cs-next__desc  { color: #F2818E; }
+.cs-next--pa { background: #411503; }
+.cs-next--pa .cs-next__title { color: #FBE8CB; }
+.cs-next--pa .cs-next__desc  { color: #FBE8CB; }
 
 /* ── Cover image ──────────────────────────── */
 .cs-cover {
@@ -524,9 +524,9 @@
 }
 
 /* per-project next backgrounds */
-.cs-next--upfeup { background: #411503; }
-.cs-next--upfeup .cs-next__title { color: #FBE8CB; }
-.cs-next--upfeup .cs-next__desc  { color: #FBE8CB; }
+.cs-next--upfeup { background: #440230; }
+.cs-next--upfeup .cs-next__title { color: #F2818E; }
+.cs-next--upfeup .cs-next__desc  { color: #F2818E; }
 
 .cs-next--myaj { background: #00320C; }
 .cs-next--myaj .cs-next__title { color: #96FFA8; }
