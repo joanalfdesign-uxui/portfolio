@@ -128,7 +128,71 @@ if (typeof Lenis !== 'undefined') {
 })();
 
 
-// ── 4. Scroll progress bar ───────────────────────
+// ── 4. Lightbox for case study images ────────────
+(function initLightbox() {
+  if (!document.querySelector('.cs-hero')) return;
+
+  const images = Array.from(document.querySelectorAll(
+    '.cs-cover img, .cs-image img, .cs-image-grid img'
+  ));
+  if (images.length === 0) return;
+
+  // Inject lightbox
+  const lb = document.createElement('div');
+  lb.className = 'cs-lightbox';
+  lb.setAttribute('role', 'dialog');
+  lb.setAttribute('aria-modal', 'true');
+  lb.innerHTML = `
+    <button class="cs-lightbox__close" aria-label="Close">&#x2715;</button>
+    <button class="cs-lightbox__prev" aria-label="Previous">&#8592;</button>
+    <img class="cs-lightbox__img" src="" alt="" />
+    <button class="cs-lightbox__next" aria-label="Next">&#8594;</button>
+    <span class="cs-lightbox__counter"></span>
+  `;
+  document.body.appendChild(lb);
+
+  const lbImg     = lb.querySelector('.cs-lightbox__img');
+  const lbCounter = lb.querySelector('.cs-lightbox__counter');
+  let current = 0;
+
+  function show(index) {
+    current = (index + images.length) % images.length;
+    lbImg.src = images[current].src;
+    lbImg.alt = images[current].alt || '';
+    lbCounter.textContent = `${current + 1} / ${images.length}`;
+  }
+
+  function open(index) {
+    show(index);
+    lb.classList.add('is-open');
+    document.documentElement.style.overflow = 'hidden';
+  }
+
+  function close() {
+    lb.classList.remove('is-open');
+    document.documentElement.style.overflow = '';
+  }
+
+  images.forEach((img, i) => {
+    img.style.cursor = 'zoom-in';
+    img.addEventListener('click', () => open(i));
+  });
+
+  lb.querySelector('.cs-lightbox__close').addEventListener('click', close);
+  lb.querySelector('.cs-lightbox__prev').addEventListener('click', () => { show(current - 1); });
+  lb.querySelector('.cs-lightbox__next').addEventListener('click', () => { show(current + 1); });
+  lb.addEventListener('click', (e) => { if (e.target === lb) close(); });
+
+  document.addEventListener('keydown', (e) => {
+    if (!lb.classList.contains('is-open')) return;
+    if (e.key === 'Escape')     close();
+    if (e.key === 'ArrowLeft')  show(current - 1);
+    if (e.key === 'ArrowRight') show(current + 1);
+  });
+})();
+
+
+// ── 5. Scroll progress bar ───────────────────────
 (function initProgressBar() {
   const bar = document.getElementById('navProgress');
   if (!bar) return;
