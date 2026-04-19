@@ -191,10 +191,17 @@ ul  { list-style: none; }
 .site-header {
   position: fixed;
   top: 32px;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 0;
+  right: 0;
   z-index: 100;
-  width: fit-content;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  pointer-events: none;
+}
+
+.site-header .nav {
+  pointer-events: auto;
 }
 
 .nav {
