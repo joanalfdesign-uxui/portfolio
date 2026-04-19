@@ -166,6 +166,7 @@
 .cs-hero--upfeup .cs-hero__bg { background: #440230; }
 .cs-hero--upfeup .cs-meta__label { color: rgba(242,129,142,0.45); }
 .cs-hero--upfeup .cs-meta__value { color: #F2818E; }
+.cs-hero--upfeup .cs-meta { grid-template-columns: repeat(5, 1fr); }
 
 .cs-hero--myaj .cs-hero__bg   { background: #00320C; }
 .cs-hero--myaj .cs-meta__label { color: rgba(150,255,168,0.45); }
