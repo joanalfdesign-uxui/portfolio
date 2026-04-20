@@ -443,10 +443,12 @@ ul  { list-style: none; }
 .brands__list {
   display: flex;
   align-items: center;
-  gap: 80px;
-  animation: scroll-brands 20s linear infinite;
+  animation: scroll-brands 30s linear infinite;
   width: max-content;
+  will-change: transform;
 }
+
+.brands__list:hover { animation-play-state: paused; }
 
 @keyframes scroll-brands {
   0%   { transform: translateX(0); }
@@ -459,6 +461,8 @@ ul  { list-style: none; }
   object-fit: contain;
   opacity: 0.7;
   filter: brightness(0) saturate(0);
+  margin-right: 80px;
+  flex-shrink: 0;
 }
 
 /* ============================================
