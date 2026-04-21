@@ -1255,14 +1255,20 @@ a.project-card:hover {
   }
 
   .site-footer__nav-link {
-    padding: 14px 0;
+    padding: 18px 24px;
     background: none;
-    border-radius: 0;
+    border-radius: 9999px;
     height: auto;
   }
 
   .site-footer__nav-link:first-child {
     border-top: none;
+  }
+
+  /* Overlay as pill button to match desktop */
+  .footer-link-overlay {
+    inset: 4px 4px;
+    border-radius: 9999px;
   }
 }
 
