@@ -629,6 +629,11 @@ a.project-card:hover {
   transform: translate(-50%, -50%) scale(1);
 }
 
+/* Hide custom cursor on touch / no-hover devices */
+@media (hover: none), (pointer: coarse) {
+  .project-cursor { display: none !important; }
+}
+
 /* CTA Button */
 .btn-link {
   display: inline-flex;
