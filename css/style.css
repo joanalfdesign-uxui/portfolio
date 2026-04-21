@@ -1272,7 +1272,8 @@ a.project-card:hover {
 @media (max-width: 768px) {
   /* Nav — fit all 3 links on one line */
   .site-header { top: 16px; }
-  .nav__link   { padding: 8px 10px; font-size: 11px; white-space: nowrap; }
+  .nav__list   { gap: 2px; }
+  .nav__link   { padding: 10px 14px; font-size: 13px; white-space: nowrap; }
 
   /* Hero */
   .hero { padding: 16px 12px; }
