@@ -42,7 +42,7 @@
 
   <!-- Custom cursor -->
   <div class="project-cursor" aria-hidden="true">
-    <span>See how it was done</span>
+    <span class="project-cursor__text">See how it was done</span>
   </div>
 
   <main id="main-content">
@@ -82,7 +82,7 @@
         </a>
 
         <!-- Card 2: MyAJ Partner -->
-        <a href="myaj.html" class="work-card work-card--myaj" data-tags="mobile b2b">
+        <a class="work-card work-card--myaj is-coming-soon" data-tags="mobile b2b" data-coming-soon="true" aria-label="MyAJ Partner — Coming soon" aria-disabled="true" role="link">
           <div class="work-card__image-wrap">
             <img src="../assets/MyAJ Project/Cover_Project_MYAJ.jpg" alt="MyAJ Partner project" class="work-card__image" loading="lazy" decoding="async" />
           </div>
@@ -99,7 +99,7 @@
         </a>
 
         <!-- Card 3: Iokee -->
-        <a href="iokee.html" class="work-card work-card--iokee" data-tags="mobile startup">
+        <a class="work-card work-card--iokee is-coming-soon" data-tags="mobile startup" data-coming-soon="true" aria-label="Iokee — Coming soon" aria-disabled="true" role="link">
           <div class="work-card__image-wrap">
             <img src="../assets/IOKEE Project/Cover_Project_IOKEE.jpg" alt="Iokee project" class="work-card__image" loading="lazy" decoding="async" />
           </div>
@@ -219,9 +219,17 @@
       cursor.style.top  = e.clientY + 'px';
     });
 
+    const cursorText = cursor.querySelector('.project-cursor__text');
     cards.forEach(card => {
-      card.addEventListener('mouseenter', () => cursor.classList.add('visible'));
+      const isComingSoon = card.dataset.comingSoon === 'true';
+      card.addEventListener('mouseenter', () => {
+        cursorText.textContent = isComingSoon ? 'Coming soon' : 'See how it was done';
+        cursor.classList.add('visible');
+      });
       card.addEventListener('mouseleave', () => cursor.classList.remove('visible'));
+      if (isComingSoon) {
+        card.addEventListener('click', (e) => e.preventDefault());
+      }
     });
 
     // Scroll progress bar
