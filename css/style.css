@@ -1255,9 +1255,9 @@ a.project-card:hover {
   }
 
   .site-footer__nav-link {
-    padding: 18px 24px;
+    padding: 24px 36px;
     background: none;
-    border-radius: 9999px;
+    border-radius: 0;
     height: auto;
   }
 
@@ -1265,10 +1265,10 @@ a.project-card:hover {
     border-top: none;
   }
 
-  /* Overlay as pill button to match desktop */
+  /* Overlay matches desktop rounded-rect */
   .footer-link-overlay {
-    inset: 4px 4px;
-    border-radius: 9999px;
+    inset: 4px 8px;
+    border-radius: 12px;
   }
 }
 
