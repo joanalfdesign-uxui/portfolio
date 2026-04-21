@@ -1305,7 +1305,7 @@ a.project-card:hover {
   .project-card__desc  { font-size: 14px; }
 
   /* Skills */
-  .skills { padding: 60px 20px; gap: 32px; }
+  .skills { padding: 60px 12px; gap: 32px; }
   .skills__heading { font-size: 24px; }
   .skills__grid    { grid-template-columns: 1fr; }
   .skills__item    { padding: 20px; }
