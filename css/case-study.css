@@ -641,6 +641,28 @@
 
 @media (max-width: 768px) {
   .cs-lightbox__hint { font-size: 11px; top: 16px; }
+
+  /* Shrink image and move nav below it so arrows don't cover content */
+  .cs-lightbox__img {
+    max-width: 92vw;
+    max-height: 62vh;
+  }
+
+  .cs-lightbox__prev,
+  .cs-lightbox__next {
+    top: auto;
+    bottom: 24px;
+    transform: none;
+    width: 48px;
+    height: 48px;
+  }
+
+  .cs-lightbox__prev { left: 24px; }
+  .cs-lightbox__next { right: 24px; }
+
+  .cs-lightbox__counter {
+    bottom: 88px;
+  }
 }
 
 /* ── Responsive ───────────────────────────── */
