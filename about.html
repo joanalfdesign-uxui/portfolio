@@ -151,44 +151,6 @@
   <!-- ===== FOOTER ===== -->
   <site-footer></site-footer>
 
-  <script>
-    // Scroll reveal
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('is-visible');
-          observer.unobserve(entry.target);
-        }
-      });
-    }, { threshold: 0.12 });
-    document.querySelectorAll('[data-reveal]').forEach(el => observer.observe(el));
-
-    // Scroll progress bar
-    const progressBar = document.getElementById('navProgress');
-    window.addEventListener('scroll', () => {
-      const scrollTop = window.scrollY;
-      const docHeight = document.documentElement.scrollHeight - window.innerHeight;
-      const progress = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
-      progressBar.style.width = progress + '%';
-    });
-
-    // Footer hover
-    document.querySelectorAll('.site-footer__nav-link').forEach(link => {
-      const overlay = link.querySelector('.footer-link-overlay');
-      const text = link.querySelector('.footer-link-text');
-      const svg = link.querySelector('svg');
-      link.addEventListener('mouseenter', () => {
-        overlay.style.opacity = '1';
-        if (text) text.style.color = '#000000';
-        if (svg) svg.style.color = '#000000';
-      });
-      link.addEventListener('mouseleave', () => {
-        overlay.style.opacity = '0';
-        if (text) text.style.color = '';
-        if (svg) svg.style.color = '';
-      });
-    });
-  </script>
   <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.14/dist/lenis.min.js"></script>
   <script src="js/effects.js"></script>
 </body>
