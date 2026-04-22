@@ -228,13 +228,15 @@ if (typeof Lenis !== 'undefined') {
 
 // ── 4.6. Mobile-only project card CTA pill ────────
 (function initProjectCardMobileCTA() {
-  const cards = document.querySelectorAll('a.project-card, a.work-card');
+  const cards = document.querySelectorAll('a.project-card, a.work-card, a.cs-next');
   if (!cards.length) return;
 
   const pills = [];
   cards.forEach(card => {
     if (card.querySelector('.project-card__cta')) return;
-    const body = card.querySelector('.project-card__body, .work-card__body, .work-card__content');
+    const body = card.querySelector(
+      '.project-card__body, .work-card__body, .work-card__content, .cs-next__info'
+    );
     if (!body) return;
 
     const isComingSoon = card.dataset.comingSoon === 'true';
@@ -242,7 +244,9 @@ if (typeof Lenis !== 'undefined') {
     pill.className = 'project-card__cta';
     if (isComingSoon) pill.classList.add('project-card__cta--coming');
     pill.setAttribute('aria-hidden', 'true');
-    pill.textContent = isComingSoon ? 'Coming soon' : 'See how it was done';
+    pill.textContent = isComingSoon
+      ? 'Coming soon'
+      : (card.classList.contains('cs-next') ? 'Read next' : 'See how it was done');
     body.appendChild(pill);
     pills.push(pill);
   });
