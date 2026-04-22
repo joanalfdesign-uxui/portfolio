@@ -46,8 +46,8 @@
               ${link(`${base}work/`,      'Selected Work', isSWork)}
               ${link(`${base}about.html`, 'About me',      isAbout)}
             </ul>
+            <div class="nav__progress-bar" id="navProgress"></div>
           </nav>
-          <div class="nav__progress-bar" id="navProgress"></div>
         </header>`;
     }
   }
