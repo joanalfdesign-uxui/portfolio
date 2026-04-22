@@ -1,0 +1,20 @@
+/* ============================================
+   DESIGN TOKENS — CSS custom properties
+   ============================================ */
+:root {
+  /* Colours */
+  --c-accent:  #F2818E;
+  --c-surface: #F7F7F7;
+  --c-ink:     #000000;
+  --c-dark:    #0D0D0D;
+  --c-muted:   #AAAAAA;
+
+  /* Radii */
+  --radius-card:    40px;
+  --radius-overlay: 12px;
+  --radius-pill:    9999px;
+
+  /* Typography */
+  --font-sans:    'Albert Sans', sans-serif;
+  --font-display: 'Boldonse', serif;
+}

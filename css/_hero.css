@@ -1,0 +1,109 @@
+/* ============================================
+   HERO
+   ============================================ */
+.hero {
+  padding: 20px 32px 24px;
+}
+
+.hero__bg {
+  background: #000000;
+  border-radius: 40px;
+  padding: 100px 0 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Inner: column, alignItems center, gap 32px */
+.hero__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  width: 100%;
+  padding: 0 32px;
+}
+
+/* Title group: column, alignItems center, gap 8px */
+.hero__title-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Hero entrance animation */
+@keyframes hero-fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes hero-fade-in {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* "Hi! I'm Joana, a" */
+.hero__hi {
+  font-family: 'Albert Sans', sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 1.15;
+  letter-spacing: -0.04em;
+  color: #F7F7F7;
+  text-align: center;
+  opacity: 0;
+  animation: hero-fade-up 0.7s ease forwards;
+  animation-delay: 0.1s;
+}
+
+/* PRODUCT DESIGNER visual block */
+.hero__visual {
+  position: relative;
+  width: 640px;
+  max-width: 100%;
+  opacity: 0;
+  animation: hero-fade-up 0.8s ease forwards;
+  animation-delay: 0.3s;
+}
+
+.hero__pd-img {
+  width: 640px;
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Subtitle H1 */
+.hero__subtitle {
+  font-family: 'Albert Sans', sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 1.2;
+  letter-spacing: -0.04em;
+  color: #F7F7F7;
+  text-align: center;
+  opacity: 0;
+  animation: hero-fade-up 0.7s ease forwards;
+  animation-delay: 0.5s;
+}
+
+/* Description */
+.hero__description {
+  font-family: 'Albert Sans', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.5;
+  color: rgba(255, 255, 252, 0.75);
+  text-align: center;
+  max-width: 548px;
+  opacity: 0;
+  animation: hero-fade-up 0.7s ease forwards;
+  animation-delay: 0.65s;
+}

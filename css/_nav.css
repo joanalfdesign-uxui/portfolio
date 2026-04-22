@@ -1,0 +1,68 @@
+/* ============================================
+   HEADER / NAV
+   ============================================ */
+.site-header {
+  position: fixed;
+  top: 32px;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  pointer-events: none;
+}
+
+.site-header .nav {
+  pointer-events: auto;
+}
+
+.nav {
+  background: #000000;
+  border-radius: 9999px;
+  padding: 8px;
+  overflow: hidden;
+  position: relative;
+}
+
+.nav__progress-bar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 0%;
+  background: #F2818E;
+  border-radius: 0 0 12px 12px;
+  transition: width 0.1s linear;
+}
+
+.nav__list {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.nav__link {
+  display: block;
+  padding: 10px 20px;
+  font-family: 'Albert Sans', sans-serif;
+  font-size: 16px;
+  font-style: italic;
+  text-transform: uppercase;
+  line-height: 1;
+  color: #F7F7F7;
+  border-radius: 9999px;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.nav__link--active {
+  background: #F7F7F7;
+  color: #000000;
+  font-weight: 700;
+  border-radius: 9999px;
+}
+
+.nav__link:hover:not(.nav__link--active) {
+  background: rgba(255, 255, 252, 0.1);
+  opacity: 1;
+}

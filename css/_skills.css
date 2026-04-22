@@ -1,0 +1,75 @@
+/* ============================================
+   SKILLS
+   ============================================ */
+.skills {
+  padding: 60px 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+}
+
+/* Heading */
+.skills__heading {
+  font-family: 'Albert Sans', sans-serif;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 1.15;
+  letter-spacing: -0.04em;
+  color: #000000;
+}
+
+/* 3-column grid */
+.skills__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  padding: 16px 0;
+}
+
+/* Each skill item */
+.skills__item {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 32px 40px;
+}
+
+/* Icon */
+.skills__icon {
+  width: 72px;
+  height: 72px;
+  object-fit: contain;
+}
+
+.skills__text {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Title */
+.skills__title {
+  font-family: 'Albert Sans', sans-serif;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 1.15;
+  letter-spacing: -0.04em;
+  color: #000000;
+  opacity: 0.65;
+  transition: opacity 0.25s ease, font-weight 0.15s ease;
+}
+
+/* Desc */
+.skills__desc {
+  font-family: 'Albert Sans', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #000000;
+  opacity: 0.5;
+  transition: opacity 0.25s ease;
+  margin: 0;
+}
+
+.skills__item:hover .skills__title { font-weight: 700; opacity: 1; }
+.skills__item:hover .skills__desc  { opacity: 1; }

@@ -1,0 +1,134 @@
+/* ============================================
+   WORK EXPERIENCE
+   ============================================ */
+.experience {
+  padding: 60px 60px;
+}
+
+.experience__top {
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+}
+
+/* Heading */
+.experience__heading {
+  font-family: 'Albert Sans', sans-serif;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 1.15;
+  letter-spacing: -0.04em;
+  color: #000000;
+}
+
+.experience__list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  margin: 0 -60px;
+  padding: 0 clamp(20px, 13.5vw, 260px);
+}
+
+/* Card row */
+.exp-card {
+  padding: 0;
+  position: relative;
+}
+
+/* Hover images – BRAINR */
+.exp-card__hover-img {
+  position: fixed;
+  width: 220px;
+  height: auto;
+  border-radius: 16px;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.35s ease, transform 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+  z-index: 9999;
+  box-shadow: 0 16px 48px rgba(0,0,0,0.22);
+}
+
+.exp-card__hover-img--1 {
+  transform: rotate(-7deg) scale(0.85);
+}
+
+.exp-card__hover-img--2 {
+  width: 180px;
+  transform: rotate(5deg) scale(0.85);
+  transition-delay: 0.08s;
+}
+
+/* Card — no background, separator line */
+.exp-card__inner {
+  border-bottom: 1px solid rgba(0,0,0,0.12);
+  padding: 48px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.exp-card:last-child .exp-card__inner {
+  border-bottom: none;
+}
+
+/* Top row: left (role + logo) + date */
+.exp-card__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+}
+
+/* Left: role + logo inline */
+.exp-card__left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+/* Date */
+.exp-card__date {
+  font-family: 'Albert Sans', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.35;
+  letter-spacing: -0.02em;
+  color: #888888;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+/* Logo image */
+.exp-card__logo {
+  width: auto;
+  object-fit: contain;
+  opacity: 1;
+}
+
+.exp-card__logo[alt="BRAINR"]      { height: 36px; border-radius: 8px; }
+.exp-card__logo[alt="New Normal"]  { height: 36px; border-radius: 8px; }
+.exp-card__logo[alt="Able IT"]     { height: 36px; border-radius: 8px; }
+.exp-card__logo[alt="Innovaj"]     { height: 36px; border-radius: 8px; }
+
+/* Role */
+.exp-card__role {
+  font-family: 'Albert Sans', sans-serif;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 1.15;
+  letter-spacing: -0.04em;
+  color: #000000;
+}
+
+/* Description */
+.exp-card__desc {
+  font-family: 'Albert Sans', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.6;
+  color: #555555;
+  max-width: 560px;
+  text-align: left;
+  margin: 0;
+}

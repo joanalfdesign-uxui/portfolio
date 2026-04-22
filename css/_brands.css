@@ -1,0 +1,80 @@
+/* ============================================
+   BRANDS TICKER
+   ============================================ */
+.brands {
+  padding: 26px 0 24px;
+  overflow: hidden;
+  position: relative;
+}
+
+.brands__badge {
+  position: fixed;
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%) scale(0.8);
+  z-index: 9999;
+  background: #000000;
+  color: #F7F7F7;
+  font-family: 'Albert Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 12px 20px;
+  border-radius: 100px;
+  white-space: nowrap;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.brands__badge.visible {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.brands::before,
+.brands::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 120px;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.brands::before {
+  left: 0;
+  background: linear-gradient(90deg, #F7F7F7 0%, transparent 100%);
+}
+
+.brands::after {
+  right: 0;
+  background: linear-gradient(270deg, #F7F7F7 0%, transparent 100%);
+}
+
+.brands__track { overflow: hidden; }
+
+.brands__list {
+  display: flex;
+  align-items: center;
+  animation: scroll-brands 30s linear infinite;
+  width: max-content;
+  will-change: transform;
+}
+
+.brands__list:hover { animation-play-state: paused; }
+
+@keyframes scroll-brands {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.brand-logo {
+  height: 36px;
+  width: auto;
+  object-fit: contain;
+  opacity: 0.7;
+  filter: brightness(0) saturate(0);
+  margin-right: 80px;
+  flex-shrink: 0;
+}
