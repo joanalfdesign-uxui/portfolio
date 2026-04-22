@@ -193,6 +193,70 @@ if (typeof Lenis !== 'undefined') {
 })();
 
 
+// ── 4.5. LinkedIn deep-link on mobile ────────────
+(function initLinkedInDeepLink() {
+  const links = document.querySelectorAll('a.site-footer__social[href*="linkedin.com/in/"]');
+  if (!links.length) return;
+  const isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+  if (!isMobile) return;
+
+  links.forEach(link => {
+    link.addEventListener('click', (e) => {
+      const webUrl = link.href;
+      // Extract "/in/<handle>" → linkedin://in/<handle>
+      const match = webUrl.match(/\/in\/([^\/?#]+)/);
+      if (!match) return;
+      const appUrl = 'linkedin://in/' + match[1];
+
+      e.preventDefault();
+
+      // Fallback: open the website if the app doesn't capture the scheme
+      const fallback = setTimeout(() => {
+        window.location.href = webUrl;
+      }, 800);
+
+      // If the app opens, the page is backgrounded and the fallback is cancelled
+      const cancel = () => clearTimeout(fallback);
+      window.addEventListener('pagehide', cancel, { once: true });
+      window.addEventListener('blur', cancel, { once: true });
+
+      window.location.href = appUrl;
+    });
+  });
+})();
+
+
+// ── 4.6. Mobile-only project card CTA pill ────────
+(function initProjectCardMobileCTA() {
+  const cards = document.querySelectorAll('a.project-card, a.work-card');
+  if (!cards.length) return;
+
+  const pills = [];
+  cards.forEach(card => {
+    if (card.querySelector('.project-card__cta')) return;
+    const body = card.querySelector('.project-card__body, .work-card__body, .work-card__content');
+    if (!body) return;
+
+    const isComingSoon = card.dataset.comingSoon === 'true';
+    const pill = document.createElement('span');
+    pill.className = 'project-card__cta';
+    if (isComingSoon) pill.classList.add('project-card__cta--coming');
+    pill.setAttribute('aria-hidden', 'true');
+    pill.textContent = isComingSoon ? 'Coming soon' : 'See how it was done';
+    body.appendChild(pill);
+    pills.push(pill);
+  });
+
+  // Show on mobile (narrow viewport OR no-hover device)
+  const mql = window.matchMedia('(hover: none), (pointer: coarse), (max-width: 768px)');
+  const apply = () => {
+    pills.forEach(p => p.classList.toggle('project-card__cta--visible', mql.matches));
+  };
+  apply();
+  mql.addEventListener ? mql.addEventListener('change', apply) : mql.addListener(apply);
+})();
+
+
 // ── 5. Scroll progress bar ───────────────────────
 (function initProgressBar() {
   const bar = document.getElementById('navProgress');

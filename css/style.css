@@ -634,6 +634,32 @@ a.project-card:hover {
   .project-cursor { display: none !important; }
 }
 
+/* Mobile-only CTA pill injected into project cards (touch has no hover) */
+.project-card__cta {
+  display: none;
+}
+
+.project-card__cta--visible {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  align-self: flex-start;
+  margin-top: 4px;
+  padding: 12px 20px;
+  background: #000000;
+  color: #F7F7F7;
+  border-radius: 9999px;
+  font-family: 'Albert Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.project-card__cta--coming {
+  background: rgba(0,0,0,0.55);
+}
+
 /* CTA Button */
 .btn-link {
   display: inline-flex;
