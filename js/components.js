@@ -74,7 +74,7 @@
               <div class="site-footer__col site-footer__col--left">
                 <div class="site-footer__cta">
                   <h2 class="site-footer__heading">Got a complex problem to solve?</h2>
-                  <p class="site-footer__subheading">That's exactly where I work best.</p>
+                  <p class="site-footer__subheading">I work best when the constraints are real.</p>
                 </div>
                 <div class="site-footer__contact">
                   <p class="site-footer__contact-item">Portugal</p>
