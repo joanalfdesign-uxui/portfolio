@@ -65,7 +65,7 @@
 @media (max-width: 768px) {
   /* Section headings */
   .section-heading__h     { font-size: 36px; }
-  .section-heading__h em  { font-size: 38px; }
+  .section-heading__h em  { font-size: 40px; }
 
   /* Nav — fit all 3 links on one line */
   .site-header { top: 16px; }
