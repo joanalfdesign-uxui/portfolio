@@ -288,10 +288,12 @@
   text-transform: uppercase;
   color: #888888;
   margin-bottom: 16px;
+  text-align: center;
 }
 
 .cs-section__body {
   max-width: 840px;
+  margin: 0 auto;
 }
 
 .cs-section__heading {
@@ -302,6 +304,7 @@
   letter-spacing: -0.04em;
   color: #000000;
   margin-bottom: 28px;
+  text-align: center;
 }
 
 .cs-section__text {
