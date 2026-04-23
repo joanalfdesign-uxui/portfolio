@@ -176,9 +176,9 @@
 .cs-hero--iokee .cs-meta__label { color: rgba(156,201,239,0.45); }
 .cs-hero--iokee .cs-meta__value { color: #9CC9EF; }
 
-.cs-hero--pa .cs-hero__bg     { background: #411503; }
-.cs-hero--pa .cs-meta__label  { color: rgba(251,232,203,0.45); }
-.cs-hero--pa .cs-meta__value  { color: #FBE8CB; }
+.cs-hero--pa .cs-hero__bg     { background: #3C2A01; }
+.cs-hero--pa .cs-meta__label  { color: rgba(255,230,132,0.45); }
+.cs-hero--pa .cs-meta__value  { color: #FFE684; }
 .cs-hero--pa .cs-meta { grid-template-columns: repeat(5, 1fr); }
 
 /* ── Per-project metrics + quote colours ─── */
@@ -206,17 +206,17 @@
 .project-iokee .cs-quote__label    { color: rgba(156,201,239,0.4); }
 .project-iokee .cs-quote__text     { color: rgba(156,201,239,0.9); }
 
-.project-pa .cs-metrics            { background: #411503; }
-.project-pa .cs-metric__number     { color: #FBE8CB; }
-.project-pa .cs-metric__label      { color: #FBE8CB; }
-.project-pa .cs-metric             { border-left-color: rgba(251,232,203,0.12); }
-.project-pa .cs-quote              { background: #411503; }
-.project-pa .cs-quote__label       { color: rgba(251,232,203,0.4); }
-.project-pa .cs-quote__text        { color: rgba(251,232,203,0.9); }
+.project-pa .cs-metrics            { background: #3C2A01; }
+.project-pa .cs-metric__number     { color: #FFE684; }
+.project-pa .cs-metric__label      { color: #FFE684; }
+.project-pa .cs-metric             { border-left-color: rgba(255,230,132,0.12); }
+.project-pa .cs-quote              { background: #3C2A01; }
+.project-pa .cs-quote__label       { color: rgba(255,230,132,0.4); }
+.project-pa .cs-quote__text        { color: rgba(255,230,132,0.9); }
 
-.cs-next--pa { background: #411503; }
-.cs-next--pa .cs-next__title { color: #FBE8CB; }
-.cs-next--pa .cs-next__desc  { color: #FBE8CB; }
+.cs-next--pa { background: #3C2A01; }
+.cs-next--pa .cs-next__title { color: #FFE684; }
+.cs-next--pa .cs-next__desc  { color: #FFE684; }
 
 /* ── Cover image ──────────────────────────── */
 .cs-cover {
