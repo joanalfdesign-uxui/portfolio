@@ -214,19 +214,19 @@ ul  { list-style: none; }
 
 .section-heading__label {
   font-family: 'Albert Sans', sans-serif;
-  font-size: 12px;
-  font-weight: 400;
-  letter-spacing: 0.14em;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
   color: #888888;
 }
 
 .section-heading__h {
   font-family: 'Albert Sans', sans-serif;
-  font-weight: 300;
-  font-size: 56px;
-  line-height: 1.05;
-  letter-spacing: -0.03em;
+  font-weight: 400;
+  font-size: clamp(32px, 3.2vw, 48px);
+  line-height: 1.1;
+  letter-spacing: -0.04em;
   color: #000000;
   margin: 0;
 }
@@ -234,6 +234,6 @@ ul  { list-style: none; }
 .section-heading__h em {
   font-family: 'Cormorant Garamond', serif;
   font-style: italic;
-  font-weight: 300;
-  font-size: 64px;
+  font-weight: 400;
+  font-size: clamp(36px, 3.6vw, 54px);
 }
