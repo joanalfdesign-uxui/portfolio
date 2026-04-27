@@ -400,6 +400,10 @@
   object-position: center top;
 }
 
+.project-pa .cs-image-grid img.pa-img-9 {
+  object-position: center 75%;
+}
+
 /* ── Retrospective quote ─────────────────── */
 .cs-quote {
   background: #000000;
