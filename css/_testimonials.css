@@ -78,6 +78,21 @@
 
 .testimonial__footer { display: block; }
 
+/* Nav arrows — hidden on desktop, shown on mobile */
+.testimonials__nav {
+  display: none;
+}
+
+/* Mobile spacers — injected as flex items to ensure
+   leading/trailing padding is included in scroll extent */
+@media (max-width: 768px) {
+  .testimonials__list::before,
+  .testimonials__list::after {
+    content: '';
+    flex: 0 0 12px;
+  }
+}
+
 /* Author */
 .testimonial__author {
   font-family: 'Albert Sans', sans-serif;

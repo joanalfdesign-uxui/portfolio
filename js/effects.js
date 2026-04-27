@@ -273,3 +273,33 @@ if (typeof Lenis !== 'undefined') {
 })();
 
 
+
+
+// ── 6. Testimonials slideshow (mobile) ──────────
+(function initTestimonialsSlider() {
+  const slider = document.getElementById('testimonialsSlider');
+  const prev   = document.getElementById('testimonialPrev');
+  const next   = document.getElementById('testimonialNext');
+  if (!slider || !prev || !next) return;
+
+  const updateButtons = () => {
+    const atStart = slider.scrollLeft <= 4;
+    const atEnd   = slider.scrollLeft >= slider.scrollWidth - slider.clientWidth - 4;
+    prev.style.opacity = atStart ? '0.3' : '1';
+    prev.style.pointerEvents = atStart ? 'none' : 'auto';
+    next.style.opacity = atEnd ? '0.3' : '1';
+    next.style.pointerEvents = atEnd ? 'none' : 'auto';
+  };
+
+  const scrollTo = (dir) => {
+    const card  = slider.querySelector('.testimonial');
+    if (!card) return;
+    const width = card.offsetWidth + 12;
+    slider.scrollBy({ left: dir * width, behavior: 'smooth' });
+  };
+
+  slider.addEventListener('scroll', updateButtons, { passive: true });
+  prev.addEventListener('click', () => scrollTo(-1));
+  next.addEventListener('click', () => scrollTo(1));
+  updateButtons();
+})();
