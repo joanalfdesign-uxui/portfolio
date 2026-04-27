@@ -84,15 +84,15 @@
 .tag {
   font-family: 'Albert Sans', sans-serif;
   font-size: 12px;
+  font-weight: 500;
   line-height: 1.3;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
   color: #F7F7F7;
-  padding: 4px 8px;
+  padding: 4px 10px;
   border-radius: 9999px;
+  background: rgba(255,255,255,0.15);
 }
-
-.tag--upfeup { background: rgba(255,255,255,0.15); color: #F7F7F7; }
-.tag--myaj   { background: rgba(255,255,255,0.15); color: #F7F7F7; }
-.tag--iokee  { background: rgba(255,255,255,0.15); color: #F7F7F7; }
 
 /* Info */
 .project-card__info {
