@@ -235,3 +235,47 @@ ul  { list-style: none; }
   font-style: italic;
   font-weight: 600;
 }
+
+/* ── Floating email button ─────────────────── */
+.email-fab {
+  position: fixed;
+  bottom: 32px;
+  right: 32px;
+  z-index: 9990;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 20px;
+  background: #F2818E;
+  color: #000000;
+  border-radius: 100px;
+  font-family: 'Albert Sans', sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  text-decoration: none;
+  white-space: nowrap;
+  box-shadow: 0 4px 20px rgba(242,129,142,0.35);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.email-fab:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 28px rgba(0,0,0,0.22);
+}
+
+.email-fab:active {
+  transform: translateY(0);
+}
+
+.email-fab__icon {
+  flex-shrink: 0;
+}
+
+@media (max-width: 768px) {
+  .email-fab {
+    bottom: 20px;
+    right: 12px;
+    padding: 12px 16px;
+    font-size: 14px;
+  }
+}
