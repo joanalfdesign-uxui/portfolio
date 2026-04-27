@@ -12,6 +12,7 @@
   background: #000000;
   border-radius: 40px;
   padding: 100px 60px 64px 100px;
+  min-height: 710px;
 }
 
 .about-hero__inner {
