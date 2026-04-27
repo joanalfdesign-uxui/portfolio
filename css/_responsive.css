@@ -60,6 +60,20 @@
 }
 
 /* ============================================
+   RESPONSIVE — TABLET (769px – 1024px)
+   ============================================ */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .testimonials__list {
+    flex-direction: column;
+    gap: 16px;
+  }
+  .testimonial {
+    padding: 36px 40px;
+    min-height: auto;
+  }
+}
+
+/* ============================================
    RESPONSIVE — MOBILE (≤ 768px)
    ============================================ */
 @media (max-width: 768px) {
