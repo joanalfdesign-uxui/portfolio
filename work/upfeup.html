@@ -125,19 +125,22 @@
       </div>
     </div>
 
-    <!-- Core problems -->
-    <div class="cs-problems" data-reveal>
-      <div class="cs-problem">
-        <h3 class="cs-problem__title"><span class="cs-problem__num">01,</span> No existing system</h3>
-        <p class="cs-problem__desc">Applications managed entirely via spreadsheets with no digital system to handle candidates, documents, or decisions.</p>
+    <!-- Challenge cards -->
+    <div class="cs-cards cs-cards--3" data-reveal>
+      <div class="cs-card-item cs-card-item--dark">
+        <span class="cs-card-item__label">Problem 01</span>
+        <h3 class="cs-card-item__title">No existing system</h3>
+        <p class="cs-card-item__desc">Applications managed entirely via spreadsheets with no digital system to handle candidates, documents, or decisions.</p>
       </div>
-      <div class="cs-problem">
-        <h3 class="cs-problem__title"><span class="cs-problem__num">02,</span> Need for automation</h3>
-        <p class="cs-problem__desc">Placement rules applied by hand with no automation or consistency, every decision dependent on manual effort by academic staff.</p>
+      <div class="cs-card-item">
+        <span class="cs-card-item__label">Problem 02</span>
+        <h3 class="cs-card-item__title">Need for automation</h3>
+        <p class="cs-card-item__desc">Placement rules applied by hand with no automation or consistency, every decision dependent on manual effort by academic staff.</p>
       </div>
-      <div class="cs-problem">
-        <h3 class="cs-problem__title"><span class="cs-problem__num">03,</span> Lack of transparency</h3>
-        <p class="cs-problem__desc">Zero visibility for candidates, no status tracking, no timeline, no self-service. No way to know where their application stood.</p>
+      <div class="cs-card-item">
+        <span class="cs-card-item__label">Problem 03</span>
+        <h3 class="cs-card-item__title">Lack of transparency</h3>
+        <p class="cs-card-item__desc">Zero visibility for candidates, no status tracking, no timeline, no self-service. No way to know where their application stood.</p>
       </div>
     </div>
 
@@ -153,11 +156,32 @@
       <div class="cs-section__body">
         <h2 class="cs-section__heading">How we designed it</h2>
         <div class="cs-section__text">
-          <p><strong>Two user types, one flow.</strong> Maria, a 26-year-old UP candidate who logs in via SIGARRA and has her academic data retrieved automatically. Leonardo, a 34-year-old external candidate with no prior account who needs to manually input his academic history. Same flow, fundamentally different starting points.</p>
-          <p><strong>Mapping friction first.</strong> We mapped tasks for both candidate types and the academic team to identify where friction was most likely. A key dependency shaped everything: candidate progress relied on academic services validation before placement could run.</p>
-          <p><strong>Low-fi in Excel, intentionally.</strong> The internal dev team at FEUP gave faster, higher-quality feedback in spreadsheets than in Figma or Miro. It kept alignment tight with the people building the system.</p>
-          <p><strong>Tested with 4 participants.</strong> Task completion time was deliberately tracked, because submission time was one of the placement algorithm's criteria. Average: ~4 min, excluding academic history upload. No critical issues found. The step-by-step progress indicator consistently reduced user hesitation.</p>
+          <p>Two weeks, two user types, one flow that had to work for both. Every decision in the process traced back to that constraint.</p>
         </div>
+      </div>
+    </div>
+
+    <!-- Process cards -->
+    <div class="cs-cards cs-cards--3" data-reveal>
+      <div class="cs-card-item cs-card-item--dark cs-card-item--span2">
+        <span class="cs-card-item__label">User types</span>
+        <h3 class="cs-card-item__title">Two users, one flow</h3>
+        <p class="cs-card-item__desc">Maria, a UP candidate whose academic data is retrieved automatically via SIGARRA. Leonardo, an external candidate who inputs everything manually. Same entry point, fundamentally different starting points.</p>
+      </div>
+      <div class="cs-card-item">
+        <span class="cs-card-item__label">Mapping</span>
+        <h3 class="cs-card-item__title">Friction first</h3>
+        <p class="cs-card-item__desc">Tasks mapped for both candidate types and the academic team. Key dependency: candidate progress relied on academic validation before placement could run.</p>
+      </div>
+      <div class="cs-card-item">
+        <span class="cs-card-item__label">Prototyping</span>
+        <h3 class="cs-card-item__title">Low-fi in Excel, intentionally</h3>
+        <p class="cs-card-item__desc">The FEUP dev team gave faster, better feedback in spreadsheets than in design tools. It kept alignment tight with the people building it.</p>
+      </div>
+      <div class="cs-card-item cs-card-item--span2">
+        <span class="cs-card-item__label">Testing</span>
+        <h3 class="cs-card-item__title">Tested with 4 participants</h3>
+        <p class="cs-card-item__desc">Task completion time was tracked deliberately, because submission time fed into the placement algorithm. Average ~4 min, excluding academic history upload. No critical issues found. The step-by-step progress indicator consistently reduced hesitation.</p>
       </div>
     </div>
 
@@ -168,16 +192,40 @@
     </div>
 
 
+    <!-- Key insight -->
+    <div class="cs-quote cs-quote--center" data-reveal>
+      <span class="cs-quote__label">Key insight</span>
+      <p class="cs-quote__text">The same flow had to work for someone with a SIGARRA account and someone starting completely from scratch.</p>
+    </div>
+
     <!-- Results -->
     <div class="cs-section" data-reveal>
       <span class="cs-section__label">The results</span>
       <div class="cs-section__body">
         <h2 class="cs-section__heading">Built from zero, shipped in weeks</h2>
         <div class="cs-section__text">
-          <p><strong>End-to-end coverage.</strong> Landing page with key dates and FAQs, a dashboard for tracking applications, a step-by-step application flow, course unit selection by preference, review before submitting, and results after placement closed.</p>
-          <p><strong>Adaptive for every candidate.</strong> Those with academic history were guided through all required fields. Those without could still apply. Either way, the system communicated clearly what came next. Results by email and dashboard; enrolment and payment directly in the platform.</p>
-          <p><strong>No baseline. Strong numbers.</strong> The system launched with no prior version to compare against. 59% of all applications came in on Day 1, and 89% were correctly submitted and validated without manual intervention.</p>
+          <p>No prior version to compare against. The system went live and the numbers landed on their own.</p>
         </div>
+      </div>
+    </div>
+
+    <!-- Results cards -->
+    <div class="cs-cards cs-cards--2" data-reveal>
+      <div class="cs-card-item">
+        <span class="cs-card-item__label">Scope</span>
+        <h3 class="cs-card-item__title">End-to-end coverage</h3>
+        <p class="cs-card-item__desc">Landing page with key dates and FAQs, dashboard for tracking, step-by-step application flow, course selection by preference, review screen, and results after placement closed.</p>
+      </div>
+      <div class="cs-card-item">
+        <span class="cs-card-item__label">UX</span>
+        <h3 class="cs-card-item__title">Adaptive for every candidate</h3>
+        <p class="cs-card-item__desc">UP applicants guided with pre-filled data. External applicants could still complete the full flow. Either way, the system communicated clearly what came next at every step.</p>
+      </div>
+      <div class="cs-card-item cs-card-item--dark cs-card-item--span2">
+        <span class="cs-card-item__label">Impact</span>
+        <span class="cs-card-item__num">59%</span>
+        <h3 class="cs-card-item__title">of all applications submitted on Day 1</h3>
+        <p class="cs-card-item__desc">1,209 applications in the first phase. 89% correctly submitted and validated without manual intervention.</p>
       </div>
     </div>
 
