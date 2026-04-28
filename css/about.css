@@ -316,3 +316,19 @@
 
   .about-card__title { font-size: 20px; }
 }
+
+/* ── Reduced motion ──────────────────────────── */
+@media (prefers-reduced-motion: reduce) {
+  .about-hero__heading,
+  .about-hero__body,
+  .about-hero__cta,
+  .about-hero__visual {
+    opacity: 1;
+    animation: none;
+  }
+  [data-reveal] {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}

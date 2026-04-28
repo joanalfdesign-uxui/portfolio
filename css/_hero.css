@@ -107,3 +107,14 @@
   animation: hero-fade-up 0.7s ease forwards;
   animation-delay: 0.65s;
 }
+
+/* ── Reduced motion ──────────────────────────── */
+@media (prefers-reduced-motion: reduce) {
+  .hero__hi,
+  .hero__visual,
+  .hero__subtitle,
+  .hero__description {
+    opacity: 1;
+    animation: none;
+  }
+}

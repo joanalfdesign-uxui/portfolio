@@ -86,7 +86,7 @@
   /* Nav — fit all 3 links on one line */
   .site-header { top: 16px; }
   .nav__list   { gap: 2px; }
-  .nav__link   { padding: 10px 14px; font-size: 13px; white-space: nowrap; }
+  .nav__link   { padding: 10px 14px; font-size: 13px; white-space: nowrap; min-height: 44px; display: flex; align-items: center; justify-content: center; }
 
   /* Hero */
   .hero { padding: 16px 12px; }
