@@ -454,6 +454,10 @@
   margin: 0;
 }
 
+.cs-quote--center {
+  text-align: center;
+}
+
 /* ── Info cards grid ─────────────────────── */
 .cs-cards {
   display: grid;
@@ -507,6 +511,57 @@
   color: #555555;
   margin: 0;
 }
+
+/* Large stat number inside a card */
+.cs-card-item__num {
+  font-family: 'Albert Sans', sans-serif;
+  font-weight: 700;
+  font-size: clamp(52px, 5vw, 72px);
+  letter-spacing: -0.04em;
+  line-height: 1;
+  color: #000000;
+  margin: 4px 0 2px;
+}
+
+/* Span across 2 columns */
+.cs-card-item--span2 { grid-column: span 2; }
+
+/* Dark variant — defaults, overridden per-project below */
+.cs-card-item--dark {
+  background: #111111;
+}
+.cs-card-item--dark .cs-card-item__title { color: #F7F7F7; }
+.cs-card-item--dark .cs-card-item__desc  { color: rgba(247,247,247,0.55); }
+.cs-card-item--dark .cs-card-item__num   { color: #F7F7F7; }
+.cs-card-item--dark .cs-card-item__label {
+  background: rgba(255,255,255,0.12);
+  color: rgba(255,255,255,0.6);
+}
+
+/* Per-project dark card colours */
+.project-iokee  .cs-card-item--dark { background: #0D1733; }
+.project-iokee  .cs-card-item--dark .cs-card-item__title { color: #9CC9EF; }
+.project-iokee  .cs-card-item--dark .cs-card-item__desc  { color: rgba(156,201,239,0.6); }
+.project-iokee  .cs-card-item--dark .cs-card-item__num   { color: #9CC9EF; }
+.project-iokee  .cs-card-item--dark .cs-card-item__label { background: rgba(156,201,239,0.15); color: #9CC9EF; }
+
+.project-upfeup .cs-card-item--dark { background: #440230; }
+.project-upfeup .cs-card-item--dark .cs-card-item__title { color: #F2818E; }
+.project-upfeup .cs-card-item--dark .cs-card-item__desc  { color: rgba(242,129,142,0.6); }
+.project-upfeup .cs-card-item--dark .cs-card-item__num   { color: #F2818E; }
+.project-upfeup .cs-card-item--dark .cs-card-item__label { background: rgba(242,129,142,0.15); color: #F2818E; }
+
+.project-myaj   .cs-card-item--dark { background: #00320C; }
+.project-myaj   .cs-card-item--dark .cs-card-item__title { color: #96FFA8; }
+.project-myaj   .cs-card-item--dark .cs-card-item__desc  { color: rgba(150,255,168,0.6); }
+.project-myaj   .cs-card-item--dark .cs-card-item__num   { color: #96FFA8; }
+.project-myaj   .cs-card-item--dark .cs-card-item__label { background: rgba(150,255,168,0.15); color: #96FFA8; }
+
+.project-pa     .cs-card-item--dark { background: #3C2A01; }
+.project-pa     .cs-card-item--dark .cs-card-item__title { color: #FFE684; }
+.project-pa     .cs-card-item--dark .cs-card-item__desc  { color: rgba(255,230,132,0.6); }
+.project-pa     .cs-card-item--dark .cs-card-item__num   { color: #FFE684; }
+.project-pa     .cs-card-item--dark .cs-card-item__label { background: rgba(255,230,132,0.15); color: #FFE684; }
 
 /* Per-project label pill colours */
 .project-iokee  .cs-card-item__label { background: #0D1733; color: #9CC9EF; }
@@ -783,6 +838,7 @@
   .cs-cards,
   .cs-cards--2,
   .cs-cards--4 { grid-template-columns: 1fr; padding: 0 20px; margin-bottom: 48px; }
+  .cs-card-item--span2 { grid-column: span 1; }
   .cs-next { grid-template-columns: 1fr; margin: 0 12px 24px; padding: 12px; border-radius: 24px; cursor: auto; min-height: auto; }
   .cs-next__body { display: contents; }
   .cs-next__thumb { min-height: 200px; border-radius: 16px; order: -1; }

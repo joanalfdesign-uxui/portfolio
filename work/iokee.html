@@ -123,10 +123,10 @@
 
     <!-- Challenge cards -->
     <div class="cs-cards cs-cards--3" data-reveal>
-      <div class="cs-card-item">
+      <div class="cs-card-item cs-card-item--dark">
         <span class="cs-card-item__label">Problem 01</span>
-        <h3 class="cs-card-item__title">No real-time visibility</h3>
-        <p class="cs-card-item__desc">Consumers could only see their consumption after the bill arrived — too late to act on it.</p>
+        <span class="cs-card-item__num">60%</span>
+        <h3 class="cs-card-item__title">didn't know what an energy monitor was</h3>
       </div>
       <div class="cs-card-item">
         <span class="cs-card-item__label">Problem 02</span>
@@ -136,14 +136,14 @@
       <div class="cs-card-item">
         <span class="cs-card-item__label">Problem 03</span>
         <h3 class="cs-card-item__title">Locked behind barriers</h3>
-        <p class="cs-card-item__desc">Competitors required solar panels, extra sensors, or a specific provider. Iokee had no such restrictions — it just needed an app.</p>
+        <p class="cs-card-item__desc">Competitors required solar panels, extra sensors, or a specific provider. Iokee had none of these restrictions.</p>
       </div>
     </div>
 
     <!-- Images 1+2 -->
     <div class="cs-image-grid" data-reveal>
-      <img src="../assets/IOKEE Project/IOKEE_1.webp" alt="Iokee — App overview 1" loading="lazy" decoding="async" />
-      <img src="../assets/IOKEE Project/IOKEE_2.webp" alt="Iokee — App overview 2" loading="lazy" decoding="async" />
+      <img src="../assets/IOKEE Project/IOKEE_1.webp" alt="Iokee, App overview 1" loading="lazy" decoding="async" />
+      <img src="../assets/IOKEE Project/IOKEE_2.webp" alt="Iokee, App overview 2" loading="lazy" decoding="async" />
     </div>
 
     <!-- Process -->
@@ -152,45 +152,46 @@
       <div class="cs-section__body">
         <h2 class="cs-section__heading">How we got there</h2>
         <div class="cs-section__text">
-          <p>From survey data to beta testing, the process was iterative at every stage — always anchored to the same north star: make energy data understandable for someone who's never thought about it.</p>
+          <p>From survey data to beta testing, the process was iterative at every stage, always anchored to the same north star: make energy data understandable for someone who's never thought about it.</p>
         </div>
       </div>
     </div>
 
     <!-- Process cards -->
-    <div class="cs-cards cs-cards--2" data-reveal>
-      <div class="cs-card-item">
+    <div class="cs-cards cs-cards--3" data-reveal>
+      <div class="cs-card-item cs-card-item--dark cs-card-item--span2">
         <span class="cs-card-item__label">Research</span>
-        <h3 class="cs-card-item__title">User research & survey</h3>
-        <p class="cs-card-item__desc">88 participants surveyed on energy habits, costs, and attitudes toward monitoring tools — in collaboration with a specialist research company.</p>
+        <span class="cs-card-item__num">88</span>
+        <h3 class="cs-card-item__title">people surveyed on energy habits and attitudes</h3>
+        <p class="cs-card-item__desc">The clearest signal: users don't want raw data, they want to know which appliance is costing them money, right now.</p>
       </div>
       <div class="cs-card-item">
         <span class="cs-card-item__label">Benchmarking</span>
         <h3 class="cs-card-item__title">Competitive analysis</h3>
-        <p class="cs-card-item__desc">Analysed Shelly, EDP Re:dy, SolarEdge and others to map the gaps Iokee could own — both in features and in UX approach.</p>
+        <p class="cs-card-item__desc">Analysed Shelly, EDP Re:dy, SolarEdge and others to map the gaps Iokee could own in features and UX.</p>
       </div>
       <div class="cs-card-item">
         <span class="cs-card-item__label">Architecture</span>
         <h3 class="cs-card-item__title">Full app mapping</h3>
-        <p class="cs-card-item__desc">Mapped the complete flow across onboarding, home dashboard, device screen, wallbox, analyzer, billing, and settings — for two hardware products without fragmenting the experience.</p>
+        <p class="cs-card-item__desc">Mapped the complete flow, onboarding, dashboard, device screen, wallbox, analyzer, billing, settings, for two hardware products.</p>
       </div>
-      <div class="cs-card-item">
+      <div class="cs-card-item cs-card-item--span2">
         <span class="cs-card-item__label">Iteration</span>
         <h3 class="cs-card-item__title">Beta testing & refinement</h3>
-        <p class="cs-card-item__desc">Ongoing interviews with beta testers shaped multiple rounds of iteration. Technical language was progressively simplified based on real comprehension issues found in testing.</p>
+        <p class="cs-card-item__desc">Ongoing interviews with beta testers shaped multiple rounds of iteration. Technical language was progressively simplified based on real comprehension issues found in testing, particularly on the device screen.</p>
       </div>
     </div>
 
     <!-- Images 3+4 -->
     <div class="cs-image-grid" data-reveal>
-      <img src="../assets/IOKEE Project/IOKEE_3.webp" alt="Iokee — Process detail 1" loading="lazy" decoding="async" />
-      <img src="../assets/IOKEE Project/IOKEE_4.webp" alt="Iokee — Process detail 2" loading="lazy" decoding="async" />
+      <img src="../assets/IOKEE Project/IOKEE_3.webp" alt="Iokee, Process detail 1" loading="lazy" decoding="async" />
+      <img src="../assets/IOKEE Project/IOKEE_4.webp" alt="Iokee, Process detail 2" loading="lazy" decoding="async" />
     </div>
 
     <!-- North star callout -->
-    <div class="cs-quote" data-reveal>
+    <div class="cs-quote cs-quote--center" data-reveal>
       <span class="cs-quote__label">North star</span>
-      <p class="cs-quote__text">Users don't want raw data. They want to know which appliance is costing them money — right now.</p>
+      <p class="cs-quote__text">Users don't want raw data. They want to know which appliance is costing them money, right now.</p>
     </div>
 
     <!-- Results -->
@@ -199,7 +200,7 @@
       <div class="cs-section__body">
         <h2 class="cs-section__heading">What we built</h2>
         <div class="cs-section__text">
-          <p>The app covers the full user journey — from onboarding that builds energy literacy, to a home dashboard that surfaces the most actionable data first. The hardest challenge was translating technical hardware into plain language: the solution was <strong>progressive disclosure — lead with the everyday answer, let the curious dig deeper.</strong></p>
+          <p>The app covers the full user journey, from onboarding that builds energy literacy, to a home dashboard that surfaces the most actionable data first. The hardest challenge was translating technical hardware into plain language: the solution was <strong>progressive disclosure, lead with the everyday answer, let the curious dig deeper.</strong></p>
         </div>
       </div>
     </div>
@@ -209,22 +210,22 @@
       <div class="cs-card-item">
         <span class="cs-card-item__label">Feature</span>
         <h3 class="cs-card-item__title">Analyzer</h3>
-        <p class="cs-card-item__desc">Historical consumption context — charts that answer "when did I use the most?" without requiring any technical knowledge.</p>
+        <p class="cs-card-item__desc">Historical consumption context, charts that answer "when did I use the most?" without requiring any technical knowledge.</p>
       </div>
       <div class="cs-card-item">
         <span class="cs-card-item__label">Feature</span>
         <h3 class="cs-card-item__title">Billing estimates</h3>
-        <p class="cs-card-item__desc">Cost projections that help users anticipate their bill before it arrives — turning data into a reason to act.</p>
+        <p class="cs-card-item__desc">Cost projections that help users anticipate their bill before it arrives, turning data into a reason to act.</p>
       </div>
       <div class="cs-card-item">
         <span class="cs-card-item__label">Feature</span>
         <h3 class="cs-card-item__title">Wallbox</h3>
         <p class="cs-card-item__desc">Native EV charging management, integrated without fragmenting the experience for non-EV users.</p>
       </div>
-      <div class="cs-card-item">
+      <div class="cs-card-item cs-card-item--dark">
         <span class="cs-card-item__label">Design system</span>
         <h3 class="cs-card-item__title">Built to scale</h3>
-        <p class="cs-card-item__desc">Created from scratch to serve an ecosystem — adopted across the app and the webapp that followed as the product continued to grow.</p>
+        <p class="cs-card-item__desc">Created from scratch to serve an ecosystem, adopted across the app and the webapp that followed as the product continued to grow.</p>
       </div>
     </div>
 
@@ -242,8 +243,8 @@
 
     <!-- Images 5+6 -->
     <div class="cs-image-grid" data-reveal>
-      <img src="../assets/IOKEE Project/IOKEE_5.webp" alt="Iokee — Final screen 1" loading="lazy" decoding="async" />
-      <img src="../assets/IOKEE Project/IOKEE_6.webp" alt="Iokee — Final screen 2" loading="lazy" decoding="async" />
+      <img src="../assets/IOKEE Project/IOKEE_5.webp" alt="Iokee, Final screen 1" loading="lazy" decoding="async" />
+      <img src="../assets/IOKEE Project/IOKEE_6.webp" alt="Iokee, Final screen 2" loading="lazy" decoding="async" />
     </div>
 
     <!-- Next project -->
