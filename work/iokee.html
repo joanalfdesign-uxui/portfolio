@@ -116,8 +116,8 @@
       <div class="cs-section__body">
         <h2 class="cs-section__heading">The problem worth solving</h2>
         <div class="cs-section__text">
-          <p>Portugal has ambitious energy efficiency goals for 2030, but most consumers have no visibility into their own consumption. More than 60% of surveyed users didn't even know what an energy monitor was. The gap between intention and action was a UX problem as much as a technical one.</p>
-          <p>Consumers couldn't monitor consumption as it happened, only after receiving the bill. Energy data is dense and unfamiliar, and existing tools overwhelmed users with jargon. Competitors required solar panels, extra sensors, or being an EDP customer to work. Iokee had the hardware, it needed an app that made the data mean something.</p>
+          <p>Portugal has ambitious energy efficiency goals for 2030, but most consumers have no visibility into their own consumption. <strong>More than 60% of surveyed users didn't even know what an energy monitor was.</strong> The gap between intention and action was a UX problem as much as a technical one.</p>
+          <p>Consumers couldn't monitor consumption as it happened — only after receiving the bill. Energy data is dense and unfamiliar, and existing tools overwhelmed users with jargon. Competitors required solar panels, extra sensors, or being an EDP customer to work. Iokee had the hardware. It needed an app that made the data mean something.</p>
         </div>
       </div>
     </div>
@@ -134,9 +134,19 @@
       <div class="cs-section__body">
         <h2 class="cs-section__heading">How we got there</h2>
         <div class="cs-section__text">
-          <p>Survey data was gathered in collaboration with a specialist research company, reaching 88 participants across energy habits, costs, and attitudes toward monitoring tools. The clearest signal: users don't want raw data, they want to know which appliance is costing them money, right now. This became the north star for the device screen design.</p>
-          <p>I led competitive benchmarking, analysing Shelly, EDP Re:dy, SolarEdge and others to identify gaps Iokee could own. From there, I mapped the full app architecture, onboarding, device setup, home dashboard, wallbox, analyzer, billing, and settings. The flow had to accommodate two hardware products (HUB and Wallbox) without fragmenting the experience.</p>
-          <p>I built the complete high-fidelity UI and created the design system from scratch, designed to scale across an ecosystem of products, including the webapp that was starting to be built when I left. Beta testing and ongoing interviews with testers shaped multiple iterations, particularly on the device screen, where technical language was progressively simplified based on real comprehension issues.</p>
+          <p>Survey data was gathered in collaboration with a specialist research company, reaching 88 participants across energy habits, costs, and attitudes toward monitoring tools. The clearest signal: <strong>users don't want raw data — they want to know which appliance is costing them money, right now.</strong> This became the north star for the device screen design.</p>
+          <p>I led competitive benchmarking, analysing Shelly, EDP Re:dy, SolarEdge and others to identify gaps Iokee could own. From there, I mapped the full app architecture:</p>
+          <ul>
+            <li>Onboarding and 2-step device setup via QR code</li>
+            <li>Home dashboard — most actionable data surfaced first</li>
+            <li>Device screen with real-time consumption data</li>
+            <li>Wallbox integration for EV charging management</li>
+            <li>Analyzer for historical consumption context</li>
+            <li>Billing estimates to help users plan ahead</li>
+            <li>Settings</li>
+          </ul>
+          <p>The flow had to accommodate two hardware products — HUB and Wallbox — without fragmenting the experience.</p>
+          <p>I built the complete high-fidelity UI and <strong>created the design system from scratch</strong>, designed to scale across an ecosystem of products. Beta testing and ongoing interviews with testers shaped multiple iterations, particularly on the device screen, where technical language was progressively simplified based on real comprehension issues.</p>
         </div>
       </div>
     </div>
@@ -147,6 +157,12 @@
       <img src="../assets/IOKEE Project/IOKEE_4.webp" alt="Iokee — Process detail 2" loading="lazy" decoding="async" />
     </div>
 
+    <!-- North star callout -->
+    <div class="cs-quote" data-reveal>
+      <span class="cs-quote__label">North star</span>
+      <p class="cs-quote__text">Users don't want raw data. They want to know which appliance is costing them money — right now.</p>
+    </div>
+
     <!-- Results -->
     <div class="cs-section" data-reveal>
       <span class="cs-section__label">The results</span>
@@ -154,8 +170,13 @@
         <h2 class="cs-section__heading">What we built</h2>
         <div class="cs-section__text">
           <p>The app covers the full journey, from onboarding screens that build energy literacy before the user even sets up a device, through a 2-step device setup via QR code, to a home dashboard that surfaces the most actionable information first.</p>
-          <p>The device screen translates technical hardware data into plain language. The device screen was the hardest design challenge, energy data like intensity, phases, and consumption curves is genuinely complex. The solution was to lead with everyday language and progressive disclosure: show the simple answer first, let the curious dig deeper.</p>
-          <p>The analyzer gives historical context. Billing estimates help users plan ahead. Wallbox integration supports EV charging management. A design system was created in parallel, built to support not just the app but the broader Iokee product ecosystem.</p>
+          <p>The hardest design challenge was translating technical hardware data into plain language. Energy metrics like intensity, phases, and consumption curves are genuinely complex — the solution was <strong>progressive disclosure: lead with the everyday answer, let the curious dig deeper.</strong></p>
+          <ul>
+            <li><strong>Analyzer</strong> — gives historical consumption context</li>
+            <li><strong>Billing estimates</strong> — helps users plan ahead</li>
+            <li><strong>Wallbox</strong> — supports EV charging management</li>
+            <li><strong>Design system</strong> — adopted across the app and the webapp that followed</li>
+          </ul>
         </div>
       </div>
     </div>
@@ -166,7 +187,7 @@
       <div class="cs-section__body">
         <h2 class="cs-section__heading">Where it goes from here</h2>
         <div class="cs-section__text">
-          <p>The app went live while in beta. The next phase is gathering post-launch data, retention, activation rates, and where users drop off, to drive the next design iteration. The webapp was in early development when the project reached its current phase; extending the design system to web is the natural next step for reaching a broader audience.</p>
+          <p>The app went live while in beta. The next phase is gathering post-launch data, retention, activation rates, and where users drop off, to drive the next design iteration. The webapp was in early development as the project evolved beyond this phase; extending the design system to web is the natural next step for reaching a broader audience.</p>
           <p>As solar adoption in Portugal grows 6.5%+ per year, expanding the app's solar and wallbox features will become increasingly central to the product's value.</p>
         </div>
       </div>

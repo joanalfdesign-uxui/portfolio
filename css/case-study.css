@@ -320,6 +320,26 @@
   margin-top: 16px;
 }
 
+.cs-section__text strong {
+  font-weight: 600;
+  color: #000000;
+}
+
+.cs-section__text ul {
+  margin: 20px 0;
+  padding-left: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.cs-section__text li {
+  font-family: 'Albert Sans', sans-serif;
+  font-size: 18px;
+  line-height: 1.65;
+  color: #333333;
+}
+
 /* ── Core problems grid ───────────────────── */
 .cs-problems {
   display: grid;
