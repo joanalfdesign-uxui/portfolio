@@ -187,7 +187,7 @@
 .project-upfeup .cs-metric__label  { color: #F2818E; }
 .project-upfeup .cs-metric         { border-left-color: rgba(242,129,142,0.12); }
 .project-upfeup .cs-quote          { background: #440230; }
-.project-upfeup .cs-quote__label   { color: rgba(242,129,142,0.4); }
+.project-upfeup .cs-quote__label   { color: rgba(242,129,142,0.75); }
 .project-upfeup .cs-quote__text    { color: rgba(242,129,142,0.9); }
 
 .project-myaj .cs-metrics          { background: #00320C; }
@@ -195,7 +195,7 @@
 .project-myaj .cs-metric__label    { color: #96FFA8; }
 .project-myaj .cs-metric           { border-left-color: rgba(150,255,168,0.12); }
 .project-myaj .cs-quote            { background: #00320C; }
-.project-myaj .cs-quote__label     { color: rgba(150,255,168,0.4); }
+.project-myaj .cs-quote__label     { color: rgba(150,255,168,0.75); }
 .project-myaj .cs-quote__text      { color: rgba(150,255,168,0.9); }
 
 .project-iokee .cs-metrics         { background: #0D1733; }
@@ -203,7 +203,7 @@
 .project-iokee .cs-metric__label   { color: #9CC9EF; }
 .project-iokee .cs-metric          { border-left-color: rgba(156,201,239,0.12); }
 .project-iokee .cs-quote           { background: #0D1733; }
-.project-iokee .cs-quote__label    { color: rgba(156,201,239,0.4); }
+.project-iokee .cs-quote__label    { color: rgba(156,201,239,0.8); }
 .project-iokee .cs-quote__text     { color: rgba(156,201,239,0.9); }
 
 .project-pa .cs-metrics            { background: #3C2A01; }
@@ -211,7 +211,7 @@
 .project-pa .cs-metric__label      { color: #FFE684; }
 .project-pa .cs-metric             { border-left-color: rgba(255,230,132,0.12); }
 .project-pa .cs-quote              { background: #3C2A01; }
-.project-pa .cs-quote__label       { color: rgba(255,230,132,0.4); }
+.project-pa .cs-quote__label       { color: rgba(255,230,132,0.75); }
 .project-pa .cs-quote__text        { color: rgba(255,230,132,0.9); }
 
 .cs-next--pa { background: #3C2A01; }
@@ -437,11 +437,11 @@
 .cs-quote__label {
   display: block;
   font-family: 'Albert Sans', sans-serif;
-  font-size: 11px;
-  font-weight: 500;
-  letter-spacing: 0.1em;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: rgba(255,255,255,0.35);
+  color: rgba(255,255,255,0.65);
   margin-bottom: 20px;
 }
 
