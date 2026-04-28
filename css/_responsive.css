@@ -71,6 +71,12 @@
     padding: 36px 40px;
     min-height: auto;
   }
+
+  /* About cards: let them grow with content */
+  .about-card {
+    height: auto;
+    min-height: 420px;
+  }
 }
 
 /* ============================================
