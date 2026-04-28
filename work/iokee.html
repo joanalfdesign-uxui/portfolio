@@ -116,9 +116,27 @@
       <div class="cs-section__body">
         <h2 class="cs-section__heading">The problem worth solving</h2>
         <div class="cs-section__text">
-          <p>Portugal has ambitious energy efficiency goals for 2030, but most consumers have no visibility into their own consumption. <strong>More than 60% of surveyed users didn't even know what an energy monitor was.</strong> The gap between intention and action was a UX problem as much as a technical one.</p>
-          <p>Consumers couldn't monitor consumption as it happened — only after receiving the bill. Energy data is dense and unfamiliar, and existing tools overwhelmed users with jargon. Competitors required solar panels, extra sensors, or being an EDP customer to work. Iokee had the hardware. It needed an app that made the data mean something.</p>
+          <p>Portugal has ambitious energy efficiency goals for 2030, but most consumers have no visibility into their own consumption. <strong>More than 60% of surveyed users had never heard of an energy monitor.</strong> The gap between intention and action was a UX problem as much as a technical one.</p>
         </div>
+      </div>
+    </div>
+
+    <!-- Challenge cards -->
+    <div class="cs-cards cs-cards--3" data-reveal>
+      <div class="cs-card-item">
+        <span class="cs-card-item__label">Problem 01</span>
+        <h3 class="cs-card-item__title">No real-time visibility</h3>
+        <p class="cs-card-item__desc">Consumers could only see their consumption after the bill arrived — too late to act on it.</p>
+      </div>
+      <div class="cs-card-item">
+        <span class="cs-card-item__label">Problem 02</span>
+        <h3 class="cs-card-item__title">Data overload</h3>
+        <p class="cs-card-item__desc">Existing tools buried users in technical jargon and required setups most households couldn't navigate.</p>
+      </div>
+      <div class="cs-card-item">
+        <span class="cs-card-item__label">Problem 03</span>
+        <h3 class="cs-card-item__title">Locked behind barriers</h3>
+        <p class="cs-card-item__desc">Competitors required solar panels, extra sensors, or a specific provider. Iokee had no such restrictions — it just needed an app.</p>
       </div>
     </div>
 
@@ -134,20 +152,32 @@
       <div class="cs-section__body">
         <h2 class="cs-section__heading">How we got there</h2>
         <div class="cs-section__text">
-          <p>Survey data was gathered in collaboration with a specialist research company, reaching 88 participants across energy habits, costs, and attitudes toward monitoring tools. The clearest signal: <strong>users don't want raw data — they want to know which appliance is costing them money, right now.</strong> This became the north star for the device screen design.</p>
-          <p>I led competitive benchmarking, analysing Shelly, EDP Re:dy, SolarEdge and others to identify gaps Iokee could own. From there, I mapped the full app architecture:</p>
-          <ul>
-            <li>Onboarding and 2-step device setup via QR code</li>
-            <li>Home dashboard — most actionable data surfaced first</li>
-            <li>Device screen with real-time consumption data</li>
-            <li>Wallbox integration for EV charging management</li>
-            <li>Analyzer for historical consumption context</li>
-            <li>Billing estimates to help users plan ahead</li>
-            <li>Settings</li>
-          </ul>
-          <p>The flow had to accommodate two hardware products — HUB and Wallbox — without fragmenting the experience.</p>
-          <p>I built the complete high-fidelity UI and <strong>created the design system from scratch</strong>, designed to scale across an ecosystem of products. Beta testing and ongoing interviews with testers shaped multiple iterations, particularly on the device screen, where technical language was progressively simplified based on real comprehension issues.</p>
+          <p>From survey data to beta testing, the process was iterative at every stage — always anchored to the same north star: make energy data understandable for someone who's never thought about it.</p>
         </div>
+      </div>
+    </div>
+
+    <!-- Process cards -->
+    <div class="cs-cards cs-cards--2" data-reveal>
+      <div class="cs-card-item">
+        <span class="cs-card-item__label">Research</span>
+        <h3 class="cs-card-item__title">User research & survey</h3>
+        <p class="cs-card-item__desc">88 participants surveyed on energy habits, costs, and attitudes toward monitoring tools — in collaboration with a specialist research company.</p>
+      </div>
+      <div class="cs-card-item">
+        <span class="cs-card-item__label">Benchmarking</span>
+        <h3 class="cs-card-item__title">Competitive analysis</h3>
+        <p class="cs-card-item__desc">Analysed Shelly, EDP Re:dy, SolarEdge and others to map the gaps Iokee could own — both in features and in UX approach.</p>
+      </div>
+      <div class="cs-card-item">
+        <span class="cs-card-item__label">Architecture</span>
+        <h3 class="cs-card-item__title">Full app mapping</h3>
+        <p class="cs-card-item__desc">Mapped the complete flow across onboarding, home dashboard, device screen, wallbox, analyzer, billing, and settings — for two hardware products without fragmenting the experience.</p>
+      </div>
+      <div class="cs-card-item">
+        <span class="cs-card-item__label">Iteration</span>
+        <h3 class="cs-card-item__title">Beta testing & refinement</h3>
+        <p class="cs-card-item__desc">Ongoing interviews with beta testers shaped multiple rounds of iteration. Technical language was progressively simplified based on real comprehension issues found in testing.</p>
       </div>
     </div>
 
@@ -169,15 +199,32 @@
       <div class="cs-section__body">
         <h2 class="cs-section__heading">What we built</h2>
         <div class="cs-section__text">
-          <p>The app covers the full journey, from onboarding screens that build energy literacy before the user even sets up a device, through a 2-step device setup via QR code, to a home dashboard that surfaces the most actionable information first.</p>
-          <p>The hardest design challenge was translating technical hardware data into plain language. Energy metrics like intensity, phases, and consumption curves are genuinely complex — the solution was <strong>progressive disclosure: lead with the everyday answer, let the curious dig deeper.</strong></p>
-          <ul>
-            <li><strong>Analyzer</strong> — gives historical consumption context</li>
-            <li><strong>Billing estimates</strong> — helps users plan ahead</li>
-            <li><strong>Wallbox</strong> — supports EV charging management</li>
-            <li><strong>Design system</strong> — adopted across the app and the webapp that followed</li>
-          </ul>
+          <p>The app covers the full user journey — from onboarding that builds energy literacy, to a home dashboard that surfaces the most actionable data first. The hardest challenge was translating technical hardware into plain language: the solution was <strong>progressive disclosure — lead with the everyday answer, let the curious dig deeper.</strong></p>
         </div>
+      </div>
+    </div>
+
+    <!-- Results cards -->
+    <div class="cs-cards cs-cards--2" data-reveal>
+      <div class="cs-card-item">
+        <span class="cs-card-item__label">Feature</span>
+        <h3 class="cs-card-item__title">Analyzer</h3>
+        <p class="cs-card-item__desc">Historical consumption context — charts that answer "when did I use the most?" without requiring any technical knowledge.</p>
+      </div>
+      <div class="cs-card-item">
+        <span class="cs-card-item__label">Feature</span>
+        <h3 class="cs-card-item__title">Billing estimates</h3>
+        <p class="cs-card-item__desc">Cost projections that help users anticipate their bill before it arrives — turning data into a reason to act.</p>
+      </div>
+      <div class="cs-card-item">
+        <span class="cs-card-item__label">Feature</span>
+        <h3 class="cs-card-item__title">Wallbox</h3>
+        <p class="cs-card-item__desc">Native EV charging management, integrated without fragmenting the experience for non-EV users.</p>
+      </div>
+      <div class="cs-card-item">
+        <span class="cs-card-item__label">Design system</span>
+        <h3 class="cs-card-item__title">Built to scale</h3>
+        <p class="cs-card-item__desc">Created from scratch to serve an ecosystem — adopted across the app and the webapp that followed as the product continued to grow.</p>
       </div>
     </div>
 
