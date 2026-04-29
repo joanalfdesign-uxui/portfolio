@@ -277,5 +277,6 @@ ul  { list-style: none; }
     right: 12px;
     padding: 12px 16px;
     font-size: 14px;
+    min-height: 44px;
   }
 }
