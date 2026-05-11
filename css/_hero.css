@@ -108,12 +108,43 @@
   animation-delay: 0.65s;
 }
 
+/* Download CV button */
+.hero__cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 16px 24px;
+  border: 1px solid #F7F7F7;
+  border-radius: 9999px;
+  font-family: 'Albert Sans', sans-serif;
+  font-size: 14px;
+  font-style: italic;
+  color: #F7F7F7;
+  text-decoration: none;
+  transition: background 0.2s ease, color 0.2s ease;
+  opacity: 0;
+  animation: hero-fade-up 0.7s ease forwards;
+  animation-delay: 0.8s;
+}
+
+.hero__cta:hover {
+  background: #F7F7F7;
+  color: #000000;
+}
+
+.hero__cta:focus-visible {
+  outline: 2px solid #F7F7F7;
+  outline-offset: 4px;
+  border-radius: 9999px;
+}
+
 /* ── Reduced motion ──────────────────────────── */
 @media (prefers-reduced-motion: reduce) {
   .hero__hi,
   .hero__visual,
   .hero__subtitle,
-  .hero__description {
+  .hero__description,
+  .hero__cta {
     opacity: 1;
     animation: none;
   }
