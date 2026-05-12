@@ -100,7 +100,7 @@
                     ${footerLink(`${base}work/`,       'SELECTED WORK',arrowOut)}
                     ${footerLink(`${base}about.html`,  'ABOUT ME',     arrowOut)}
                     ${footerLink(
-                      `${base}assets/cv_joanafilipe_productdesigner.pdf`,
+                      `${base}assets/CV_JOANAFILIPE_PRODUCTDESIGN.pdf`,
                       'DOWNLOAD CV',
                       arrowDown,
                       ' target="_blank" rel="noopener noreferrer"'
