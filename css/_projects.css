@@ -61,7 +61,7 @@
 
 /* Body */
 .project-card__body {
-  padding: 32px 40px 16px;
+  padding: 16px 40px 16px;
   display: flex;
   flex-direction: column;
   gap: 24px;
