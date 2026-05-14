@@ -162,6 +162,11 @@ a.project-card:hover {
   transform: translate(-50%, -50%) scale(1);
 }
 
+.project-cursor--coming {
+  background: #F7F7F7;
+  color: #000000;
+}
+
 /* Hide custom cursor on touch / no-hover devices */
 @media (hover: none), (pointer: coarse) {
   .project-cursor { display: none !important; }
@@ -190,7 +195,8 @@ a.project-card:hover {
 }
 
 .project-card__cta--coming {
-  background: rgba(0,0,0,0.55);
+  background: #F7F7F7;
+  color: #000000;
 }
 
 /* CTA Button */

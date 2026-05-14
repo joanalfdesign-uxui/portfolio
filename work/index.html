@@ -164,6 +164,7 @@
       const isComingSoon = card.dataset.comingSoon === 'true';
       card.addEventListener('mouseenter', () => {
         cursorText.textContent = isComingSoon ? 'Coming soon' : 'See how it was done';
+        cursor.classList.toggle('project-cursor--coming', isComingSoon);
         cursor.classList.add('visible');
       });
       card.addEventListener('mouseleave', () => cursor.classList.remove('visible'));
