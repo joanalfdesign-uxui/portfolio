@@ -263,6 +263,11 @@ ul  { list-style: none; }
   box-shadow: 0 8px 28px rgba(0,0,0,0.22);
 }
 
+.email-fab:focus-visible {
+  outline: 2px solid #000000;
+  outline-offset: 3px;
+}
+
 .email-fab:active {
   transform: translateY(0);
 }

@@ -140,7 +140,8 @@
   z-index: 0;
 }
 
-.site-footer__nav-link:hover .footer-link-overlay {
+.site-footer__nav-link:hover .footer-link-overlay,
+.site-footer__nav-link:focus-visible .footer-link-overlay {
   opacity: 1;
 }
 
@@ -153,7 +154,9 @@
 }
 
 .site-footer__nav-link:hover .footer-link-text,
-.site-footer__nav-link:hover svg {
+.site-footer__nav-link:hover svg,
+.site-footer__nav-link:focus-visible .footer-link-text,
+.site-footer__nav-link:focus-visible svg {
   color: #000000;
 }
 
